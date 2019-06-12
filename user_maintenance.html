@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User Maintenance</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="css/OverlayScrollbars.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        function toggleFunction() {
+            var checkbox = document.querySelector('input[type="checkbox"]');
+
+            if (checkbox.checked) {
+                document.getElementById("toggle-int").className = "col-md-4 toggleInActiveClass";
+                document.getElementById("toggle-ext").className = "col-md-3 toggleActiveClass";
+            } else {
+                document.getElementById("toggle-ext").className = "col-md-4 toggleInActiveClass";
+                document.getElementById("toggle-int").className = "col-md-3 toggleActiveClass";
+            }
+        }
+    </script>
+</head>
+
+<body onload="toggleFunction()">
+    <div class="main_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="heading">
+                        <h2><span class="red">User </span>Maintenance</h2>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="search_add search_user">
+                        <div class="sub_head">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <h4><span class="red">User </span>Search</h4>
+                                    <h6 style="font-size: 18px;">Search/Filter</h6>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="tools">
+                                        <ul>
+                                            <li><a href="#" class="tooltips"><i class="fa fa-user-plus"
+                                                        aria-hidden="true"></i><span class="tooltiptext"
+                                                        style="left: -7px;">Add User</span></a></li>
+                                            <li><a href="#" class="tooltips"><i class="fa fa-search"
+                                                        aria-hidden="true"></i><span class="tooltiptext"
+                                                        style="left: 1px; color: #990033;">Search</span></a></li>
+                                            <li><a href="#" class="tooltips"><i class="fa fa-refresh"
+                                                        aria-hidden="true"></i><span class="tooltiptext"
+                                                        style="left: 4px; color: #999;">Reset</span></a></li>
+                                        </ul>
+                                        <div class="clr_fix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6 style="color: #7f7f7f;">User Type</h6>
+                                    <label class="checkbox-inline">
+                                        <input type="radio" name="status" value="">External
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="radio" name="status" value="">Internal
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="radio" name="status" value="">All
+                                    </label>
+                                </div>
+                                <div class="col-md-6">
+                                    <h6 style="color: #7f7f7f;">User Status</h6>
+                                    <label class="checkbox-inline">
+                                        <input type="radio" name="status" value="">Active
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="radio" name="status" value="">Inactive
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="radio" name="status" value="">All
+                                    </label>
+                                </div>
+                                <div class="col-md-12">
+                                    <div style="margin-top: 10px;">
+                                        <div class="form_input">
+                                            <h6>Login</h6>
+                                            <input type="text" name="Login" class="input-fields form-control">
+                                        </div>
+                                        <div class="form_input">
+                                            <h6>First Name</h6>
+                                            <input type="text" name="FirstName" class="input-fields form-control">
+                                        </div>
+                                        <div class="form_input">
+                                            <h6>Last Name</h6>
+                                            <input type="text" name="LastName" class="input-fields form-control">
+                                        </div>
+                                        <div class="form_input">
+                                            <h6>Email</h6>
+                                            <input type="text" name="Email" class="input-fields form-control">
+                                        </div>
+                                        <div class="row" style="margin-top: 25px;margin-bottom: 5px;">
+                                            <div class="col-md-6 text-right">
+                                                <input type="button" value="SUBMIT" class="btn_yes">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="button" value="CANCEL" class="btn_no">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <hr class="search_sort">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="sort-pad">
+                                    <h6>Sort By</h6>
+                                </div>
+                                <div class="sort">
+                                    <ul>
+                                        <li class="active"> <a href="#"><i class="fa fa-sort" aria-hidden="true"></i>
+                                                Login</a></li>
+                                        <li> <a href="#"><i class="fa fa-sort" aria-hidden="true"></i> First Name</a>
+                                        </li>
+                                        <li> <a href="#"><i class="fa fa-sort" aria-hidden="true"></i> Last Name</a>
+                                        </li>
+                                        <li> <a href="#"><i class="fa fa-sort" aria-hidden="true"></i> Email</a></li>
+                                        <li> <a href="#"><i class="fa fa-sort" aria-hidden="true"></i> Internal User</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search_add add_user no_display_section">
+                        <div class="sub_head">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4 style="display: inline-block;"><span class="red">Add </span> New User</h4>
+                                    <img id="close_button" src="images/close.png">
+                                </div>
+                            </div>
+                        </div>
+                        <form>
+                            <div class="row toggle_check">
+                                <div id="toggle-int" class="col-md-3">
+                                    <h5 style="margin-top: 5px;"><span class="Int">Internal</span></h5>
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="switch">
+                                        <input type="checkbox" checked onclick="toggleFunction()">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                                <div id="toggle-ext" class="col-md-3">
+                                    <h5 style="margin-top: 5px;"><span class="Ext">External</span></h5>
+                                    <div class="row" style="margin-bottom: 27px"></div>
+                                </div>
+                            </div>
+                            <div class="form_input">
+                                <h6>Login</h6>
+                                <input type="text" name="Login" class="input-fields form-control">
+                            </div>
+                            <div class="form_input">
+                                <h6>First Name</h6>
+                                <input type="text" name="FirstName" class="input-fields form-control">
+                            </div>
+                            <div class="form_input">
+                                <h6>Last Name</h6>
+                                <input type="text" name="LastName" class="input-fields form-control">
+                            </div>
+                            <div class="form_input">
+                                <h6>Email</h6>
+                                <input type="text" name="Email" class="input-fields form-control">
+                            </div>
+                            <div class="row" style="margin: 46px auto;">
+                                <div class="col-md-6 text-right">
+                                    <input type="submit" value="SUBMIT" class="btn_yes">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="submit" value="CANCEL" class="btn_no">
+                                </div>
+                                <div class="row" style="margin-top: 30px"></div>
+                            </div>
+                        </form>
+                        <div class="row">
+                            <div id="header"></div>
+                            <div class="col-md-12">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="result">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="showing_rows_count">
+                                    Showing 4 of 30
+                                </div>
+                            </div>
+                        </div>
+                        <div class="total_sections">
+                            <div class="user_section">
+                                <div class="row">
+                                    <div class="col-md-2 pic_div">
+                                        <div class="user_pic">
+                                            <span class="helper"></span>
+                                            <img src="images/mohammad.png" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10 content_div">
+                                        <div class="user_heading">
+                                            <table style="width: 100%;">
+                                                <tr>
+                                                    <td><b>Mohammad</b> Weshah</td>
+                                                    <td style="text-align: right;">
+                                                        <div class="user_status"><img src="images/logo.png" /></div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="user_login">
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <span>Login</span>
+                                                    <p>mohammad.weshah@cevalogistics.com</p>
+                                                </div>
+                                                <div class="col-md-4">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user_email">
+                                            <span>Email</span>
+                                            <p>newuser.name@cevalogistics.com</p>
+                                        </div>
+                                        <div class="user_tools">
+                                            <div class="tools">
+                                                <ul>
+                                                    <li><a href="#" class="tooltips"><i class="fa fa-pencil"
+                                                                aria-hidden="true"></i><span class="tooltiptext"
+                                                                style="left: -5px;">Edit User</span></a></li>
+                                                    <li><a href="#" class="tooltips"><img
+                                                                src="images/user_settings.png"><span class="tooltiptext"
+                                                                style="left: -10px; color: #990033">Assign
+                                                                Roles</span></a></li>
+                                                    <li><a href="#" class="tooltips"><i class="fa fa-user-circle-o"
+                                                                aria-hidden="true"></i><span class="tooltiptext"
+                                                                style="left: -4px; width: 30px; color: #999">Profile</span></a></a>
+                                                    </li>
+                                                </ul>
+                                                <div class="clr_fix"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user_section">
+                                <div class="row">
+                                    <div class="col-md-2 pic_div">
+                                        <div class="user_pic">
+                                            <span class="helper"></span>
+                                            <img src="images/ec.png" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10 content_div">
+                                        <div class="user_heading">
+                                            <table style="width: 100%;">
+                                                <tr>
+                                                    <td><b>External</b> Customer</td>
+                                                    <td style="text-align: right;">
+                                                        <div class="user_status">[Inactive]</div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="user_login">
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <span>Login</span>
+                                                    <p>mohammad.weshah@cevalogistics.com</p>
+                                                </div>
+                                                <div class="col-md-4 text-right">
+                                                    <span>Expiration Date</span>
+                                                    <p>30 May 2019</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user_email">
+                                            <span>Email</span>
+                                            <p>newuser.name@cevalogistics.com</p>
+                                        </div>
+                                        <div class="user_tools">
+                                            <div class="tools">
+                                                <ul>
+                                                    <li><a href="#" class="tooltips"><i class="fa fa-pencil"
+                                                                aria-hidden="true"></i><span class="tooltiptext"
+                                                                style="left: -5px;">Edit User</span></a></li>
+                                                    <li><a href="#" class="tooltips"><img
+                                                                src="images/user_settings.png"><span class="tooltiptext"
+                                                                style="left: -10px; color: #990033">Assign
+                                                                Roles</span></a></li>
+                                                    <li><a href="#" class="tooltips"><i class="fa fa-user-circle-o"
+                                                                aria-hidden="true"></i><span class="tooltiptext"
+                                                                style="left: -4px; width: 30px; color: #999">Profile</span></a></a>
+                                                    </li>
+                                                </ul>
+                                                <div class="clr_fix"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user_section">
+                                <div class="row">
+                                    <div class="col-md-2 pic_div">
+                                        <div class="user_pic">
+                                            <span class="helper"></span>
+                                            <img src="images/ec.png" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10 content_div">
+                                        <div class="user_heading">
+                                            <table style="width: 100%;">
+                                                <tr>
+                                                    <td><b>External</b> Customer</td>
+                                                    <td style="text-align: right;">
+                                                        <div class="user_status">[Inactive]</div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="user_login">
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <span>Login</span>
+                                                    <p>mohammad.weshah@cevalogistics.com</p>
+                                                </div>
+                                                <div class="col-md-4 text-right">
+                                                    <span>Expiration Date</span>
+                                                    <p>30 May 2019</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user_email">
+                                            <span>Email</span>
+                                            <p>newuser.name@cevalogistics.com</p>
+                                        </div>
+                                        <div class="user_tools">
+                                            <div class="tools">
+                                                <ul>
+                                                    <li><a href="#" class="tooltips"><i class="fa fa-pencil"
+                                                                aria-hidden="true"></i><span class="tooltiptext"
+                                                                style="left: -5px;">Edit User</span></a></li>
+                                                    <li><a href="#" class="tooltips"><img
+                                                                src="images/user_settings.png"><span class="tooltiptext"
+                                                                style="left: -10px; color: #990033">Assign
+                                                                Roles</span></a></li>
+                                                    <li><a href="#" class="tooltips"><i class="fa fa-user-circle-o"
+                                                                aria-hidden="true"></i><span class="tooltiptext"
+                                                                style="left: -4px; width: 30px; color: #999">Profile</span></a></a>
+                                                    </li>
+                                                </ul>
+                                                <div class="clr_fix"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user_section">
+                                <div class="row">
+                                    <div class="col-md-2 pic_div">
+                                        <div class="user_pic">
+                                            <span class="helper"></span>
+                                            <img src="images/ec.png" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10 content_div">
+                                        <div class="user_heading">
+                                            <table style="width: 100%;">
+                                                <tr>
+                                                    <td><b>External</b> Customer</td>
+                                                    <td style="text-align: right;">
+                                                        <div class="user_status">[Inactive]</div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="user_login">
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <span>Login</span>
+                                                    <p>mohammad.weshah@cevalogistics.com</p>
+                                                </div>
+                                                <div class="col-md-4 text-right">
+                                                    <span>Expiration Date</span>
+                                                    <p>30 May 2019</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user_email">
+                                            <span>Email</span>
+                                            <p>newuser.name@cevalogistics.com</p>
+                                        </div>
+                                        <div class="user_tools">
+                                            <div class="tools">
+                                                <ul>
+                                                    <li><a href="#" class="tooltips"><i class="fa fa-pencil"
+                                                                aria-hidden="true"></i><span class="tooltiptext"
+                                                                style="left: -5px;">Edit User</span></a></li>
+                                                    <li><a href="#" class="tooltips"><img
+                                                                src="images/user_settings.png"><span class="tooltiptext"
+                                                                style="left: -10px; color: #990033">Assign
+                                                                Roles</span></a></li>
+                                                    <li><a href="#" class="tooltips"><i class="fa fa-user-circle-o"
+                                                                aria-hidden="true"></i><span class="tooltiptext"
+                                                                style="left: -4px; width: 30px; color: #999">Profile</span></a></a>
+                                                    </li>
+                                                </ul>
+                                                <div class="clr_fix"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user_section">
+                                <div class="row">
+                                    <div class="col-md-2 pic_div">
+                                        <div class="user_pic">
+                                            <span class="helper"></span>
+                                            <img src="images/mohammad.png" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10 content_div">
+                                        <div class="user_heading">
+                                            <table style="width: 100%;">
+                                                <tr>
+                                                    <td><b>Mohammad</b> Weshah</td>
+                                                    <td style="text-align: right;">
+                                                        <div class="user_status"><img src="images/logo.png" /></div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="user_login">
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <span>Login</span>
+                                                    <p>mohammad.weshah@cevalogistics.com</p>
+                                                </div>
+                                                <div class="col-md-4">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user_email">
+                                            <span>Email</span>
+                                            <p>newuser.name@cevalogistics.com</p>
+                                        </div>
+                                        <div class="user_tools">
+                                            <div class="tools">
+                                                <ul>
+                                                    <li><a href="#" class="tooltips"><i class="fa fa-pencil"
+                                                                aria-hidden="true"></i><span class="tooltiptext"
+                                                                style="left: -5px;">Edit User</span></a></li>
+                                                    <li><a href="#" class="tooltips"><img
+                                                                src="images/user_settings.png"><span class="tooltiptext"
+                                                                style="left: -10px; color: #990033">Assign
+                                                                Roles</span></a></li>
+                                                    <li><a href="#" class="tooltips"><i class="fa fa-user-circle-o"
+                                                                aria-hidden="true"></i><span class="tooltiptext"
+                                                                style="left: -4px; width: 30px; color: #999">Profile</span></a></a>
+                                                    </li>
+                                                </ul>
+                                                <div class="clr_fix"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user_section">
+                                <div class="row">
+                                    <div class="col-md-2 pic_div">
+                                        <div class="user_pic">
+                                            <span class="helper"></span>
+                                            <img src="images/ec.png" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10 content_div">
+                                        <div class="user_heading">
+                                            <table style="width: 100%;">
+                                                <tr>
+                                                    <td><b>External</b> Customer</td>
+                                                    <td style="text-align: right;">
+                                                        <div class="user_status">[Inactive]</div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="user_login">
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <span>Login</span>
+                                                    <p>mohammad.weshah@cevalogistics.com</p>
+                                                </div>
+                                                <div class="col-md-4 text-right">
+                                                    <span>Expiration Date</span>
+                                                    <p>30 May 2019</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user_email">
+                                            <span>Email</span>
+                                            <p>newuser.name@cevalogistics.com</p>
+                                        </div>
+                                        <div class="user_tools">
+                                            <div class="tools">
+                                                <ul>
+                                                    <li><a href="#" class="tooltips"><i class="fa fa-pencil"
+                                                                aria-hidden="true"></i><span class="tooltiptext"
+                                                                style="left: -5px;">Edit User</span></a></li>
+                                                    <li><a href="#" class="tooltips"><img
+                                                                src="images/user_settings.png"><span class="tooltiptext"
+                                                                style="left: -10px; color: #990033">Assign
+                                                                Roles</span></a></li>
+                                                    <li><a href="#" class="tooltips"><i class="fa fa-user-circle-o"
+                                                                aria-hidden="true"></i><span class="tooltiptext"
+                                                                style="left: -4px; width: 30px; color: #999">Profile</span></a></a>
+                                                    </li>
+                                                </ul>
+                                                <div class="clr_fix"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user_section">
+                                <div class="row">
+                                    <div class="col-md-2 pic_div">
+                                        <div class="user_pic">
+                                            <span class="helper"></span>
+                                            <img src="images/ec.png" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10 content_div">
+                                        <div class="user_heading">
+                                            <table style="width: 100%;">
+                                                <tr>
+                                                    <td><b>External</b> Customer</td>
+                                                    <td style="text-align: right;">
+                                                        <div class="user_status">[Inactive]</div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="user_login">
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <span>Login</span>
+                                                    <p>mohammad.weshah@cevalogistics.com</p>
+                                                </div>
+                                                <div class="col-md-4 text-right">
+                                                    <span>Expiration Date</span>
+                                                    <p>30 May 2019</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user_email">
+                                            <span>Email</span>
+                                            <p>newuser.name@cevalogistics.com</p>
+                                        </div>
+                                        <div class="user_tools">
+                                            <div class="tools">
+                                                <ul>
+                                                    <li><a href="#" class="tooltips"><i class="fa fa-pencil"
+                                                                aria-hidden="true"></i><span class="tooltiptext"
+                                                                style="left: -5px;">Edit User</span></a></li>
+                                                    <li><a href="#" class="tooltips"><img
+                                                                src="images/user_settings.png"><span class="tooltiptext"
+                                                                style="left: -10px; color: #990033">Assign
+                                                                Roles</span></a></li>
+                                                    <li><a href="#" class="tooltips"><i class="fa fa-user-circle-o"
+                                                                aria-hidden="true"></i><span class="tooltiptext"
+                                                                style="left: -4px; width: 30px; color: #999">Profile</span></a></a>
+                                                    </li>
+                                                </ul>
+                                                <div class="clr_fix"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user_section">
+                                <div class="row">
+                                    <div class="col-md-2 pic_div">
+                                        <div class="user_pic">
+                                            <span class="helper"></span>
+                                            <img src="images/ec.png" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10 content_div">
+                                        <div class="user_heading">
+                                            <table style="width: 100%;">
+                                                <tr>
+                                                    <td><b>External</b> Customer</td>
+                                                    <td style="text-align: right;">
+                                                        <div class="user_status">[Inactive]</div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="user_login">
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <span>Login</span>
+                                                    <p>mohammad.weshah@cevalogistics.com</p>
+                                                </div>
+                                                <div class="col-md-4 text-right">
+                                                    <span>Expiration Date</span>
+                                                    <p>30 May 2019</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user_email">
+                                            <span>Email</span>
+                                            <p>newuser.name@cevalogistics.com</p>
+                                        </div>
+                                        <div class="user_tools">
+                                            <div class="tools">
+                                                <ul>
+                                                    <li><a href="#" class="tooltips"><i class="fa fa-pencil"
+                                                                aria-hidden="true"></i><span class="tooltiptext"
+                                                                style="left: -5px;">Edit User</span></a></li>
+                                                    <li><a href="#" class="tooltips"><img
+                                                                src="images/user_settings.png"><span class="tooltiptext"
+                                                                style="left: -10px; color: #990033">Assign
+                                                                Roles</span></a></li>
+                                                    <li><a href="#" class="tooltips"><i class="fa fa-user-circle-o"
+                                                                aria-hidden="true"></i><span class="tooltiptext"
+                                                                style="left: -3.5px; width: 30px; color: #999">Profile</span></a></a>
+                                                    </li>
+                                                </ul>
+                                                <div class="clr_fix"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="alert_popup_error" style="display: none;">
+            <div>
+                <img src="images/cancel.png" />
+                <p>Please enter a valid input.</p>
+            </div>
+        </div>
+        <div class="alert_popup_success" style="display: none;">
+            <div>
+                <img src="images/check.png" />
+                <p>User has been successfully added!</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/fcee4edbc0.js"></script>
+    <script src="js/jquery.overlayScrollbars.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.total_sections').overlayScrollbars({
+                className: "os-theme-round-dark"
+            });
+            $('.user_tools img').mouseover(function () {
+                $(this).attr('src', 'images/user_settings_2.png');
+            });
+            $('.user_tools img').mouseout(function () {
+                $(this).attr('src', 'images/user_settings.png');
+            });
+            $('[data-toggle="tooltip"]').tooltip();
+            $('.btn_yes').click(function () {
+                $('.alert_popup_success').css('display', 'block');
+                $('.alert_popup_success').show().delay(2000).fadeOut(400);
+            });
+            $('.btn_no').click(function () {
+                $('.alert_popup_error').css('display', 'block');
+                $('.alert_popup_error').show().delay(2000).fadeOut(400);
+            });
+            $('.fa-user-plus').click(function(){
+               $('.search_user').hide();
+               $('.add_user').show();
+            });
+            $('#close_button').click(function(){
+               $('.search_user').show();
+               $('.add_user').hide();
+            });
+        });
+    </script>
+</body>
+
+</html>
