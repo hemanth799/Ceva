@@ -37,7 +37,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="search_add search_user">
+                    <div class="search_add search_user yes_display_section">
                         <div class="sub_head">
                             <div class="row">
                                 <div class="col-md-8">
@@ -145,7 +145,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <h4 style="display: inline-block;"><span class="red">Add </span> New User</h4>
-                                    <img id="close_button" src="images/close.png">
+                                    <img class="close_button" src="images/close.png">
                                 </div>
                             </div>
                         </div>
@@ -197,7 +197,68 @@
                             </div>
                         </div>
                     </div>
-                    
+                    <div class="search_add assing_roles no_display_section">
+                        <div class="sub_head">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4 style="display: inline-block;"><span class="red">Assign </span>Roles</h4><br>
+                                    <h6 style="display: inline-block; font-weight: bold;"><span style="font-weight: normal; color: #999">Username / Login: </span> username@domain.com</h6>
+                                    <img style="margin-top: -30px;" class="close_button" src="images/close.png">
+                                </div>
+                            </div>
+                        </div>
+                        <form>
+                            <div class="row drag_drop">
+                                <div class="col-md-5">
+                                    <div class="subject-info-box-1">
+                                        <div class="list_heads">Availabel Roles</div>
+                                        <select multiple="multiple" id='lstBox1' class="form-control">
+                                          <option value="ajax">AAF Admin</option>
+                                          <option value="jquery">CJF Admin</option>
+                                          <option value="javascript">Role 12345</option>
+                                          <option value="mootool">Role 67890</option>
+                                          <option value="prototype">Admin 12345</option>
+                                          <option value="dojo">Admin 67890</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="subject-info-arrows text-center">
+                                        <input type="button" id="btnAllRight" value=">>" class="btn btn-default" /><br />
+                                        <input type="button" id="btnRight" value=">" class="btn btn-default" /><br />
+                                        <hr style="border-bottom: 1px solid #ccc">
+                                        <input type="button" id="btnLeft" value="<" class="btn btn-default" /><br />
+                                        <input type="button" id="btnAllLeft" value="<<" class="btn btn-default" />
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="subject-info-box-2">
+                                        <div class="list_heads">Selected Roles</div>
+                                        <select multiple="multiple" id='lstBox2' class="form-control">
+                                          <option value="asp">AAF 12345</option>
+                                          <option value="c#">AAF 67890</option>
+                                          <option value="vb">CJF 12345</option>
+                                          <option value="java">CJF 67890</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="margin: 46px auto;">
+                                <div class="col-md-6 text-right">
+                                    <input type="submit" value="UPDATE" class="btn_yes">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="submit" value="CANCEL" class="btn_no">
+                                </div>
+                                <div class="row" style="margin-top: 30px"></div>
+                            </div>
+                        </form>
+                        <div class="row">
+                            <div id="header"></div>
+                            <div class="col-md-12">
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-6">
                     <div class="result">
@@ -249,7 +310,7 @@
                                                     <li><a href="#" class="tooltips"><i class="fa fa-pencil"
                                                                 aria-hidden="true"></i><span class="tooltiptext"
                                                                 style="left: -5px;">Edit User</span></a></li>
-                                                    <li><a href="#" class="tooltips"><img
+                                                    <li><a href="#" class="tooltips"><img class="assign"
                                                                 src="images/user_settings.png"><span class="tooltiptext"
                                                                 style="left: -10px; color: #990033">Assign
                                                                 Roles</span></a></li>
@@ -305,7 +366,7 @@
                                                     <li><a href="#" class="tooltips"><i class="fa fa-pencil"
                                                                 aria-hidden="true"></i><span class="tooltiptext"
                                                                 style="left: -5px;">Edit User</span></a></li>
-                                                    <li><a href="#" class="tooltips"><img
+                                                    <li><a href="#" class="tooltips"><img class="assign"
                                                                 src="images/user_settings.png"><span class="tooltiptext"
                                                                 style="left: -10px; color: #990033">Assign
                                                                 Roles</span></a></li>
@@ -361,7 +422,7 @@
                                                     <li><a href="#" class="tooltips"><i class="fa fa-pencil"
                                                                 aria-hidden="true"></i><span class="tooltiptext"
                                                                 style="left: -5px;">Edit User</span></a></li>
-                                                    <li><a href="#" class="tooltips"><img
+                                                    <li><a href="#" class="tooltips"><img class="assign"
                                                                 src="images/user_settings.png"><span class="tooltiptext"
                                                                 style="left: -10px; color: #990033">Assign
                                                                 Roles</span></a></li>
@@ -417,7 +478,7 @@
                                                     <li><a href="#" class="tooltips"><i class="fa fa-pencil"
                                                                 aria-hidden="true"></i><span class="tooltiptext"
                                                                 style="left: -5px;">Edit User</span></a></li>
-                                                    <li><a href="#" class="tooltips"><img
+                                                    <li><a href="#" class="tooltips"><img class="assign"
                                                                 src="images/user_settings.png"><span class="tooltiptext"
                                                                 style="left: -10px; color: #990033">Assign
                                                                 Roles</span></a></li>
@@ -472,7 +533,7 @@
                                                     <li><a href="#" class="tooltips"><i class="fa fa-pencil"
                                                                 aria-hidden="true"></i><span class="tooltiptext"
                                                                 style="left: -5px;">Edit User</span></a></li>
-                                                    <li><a href="#" class="tooltips"><img
+                                                    <li><a href="#" class="tooltips"><img class="assign"
                                                                 src="images/user_settings.png"><span class="tooltiptext"
                                                                 style="left: -10px; color: #990033">Assign
                                                                 Roles</span></a></li>
@@ -528,7 +589,7 @@
                                                     <li><a href="#" class="tooltips"><i class="fa fa-pencil"
                                                                 aria-hidden="true"></i><span class="tooltiptext"
                                                                 style="left: -5px;">Edit User</span></a></li>
-                                                    <li><a href="#" class="tooltips"><img
+                                                    <li><a href="#" class="tooltips"><img class="assign"
                                                                 src="images/user_settings.png"><span class="tooltiptext"
                                                                 style="left: -10px; color: #990033">Assign
                                                                 Roles</span></a></li>
@@ -584,7 +645,7 @@
                                                     <li><a href="#" class="tooltips"><i class="fa fa-pencil"
                                                                 aria-hidden="true"></i><span class="tooltiptext"
                                                                 style="left: -5px;">Edit User</span></a></li>
-                                                    <li><a href="#" class="tooltips"><img
+                                                    <li><a href="#" class="tooltips"><img class="assign"
                                                                 src="images/user_settings.png"><span class="tooltiptext"
                                                                 style="left: -10px; color: #990033">Assign
                                                                 Roles</span></a></li>
@@ -640,7 +701,7 @@
                                                     <li><a href="#" class="tooltips"><i class="fa fa-pencil"
                                                                 aria-hidden="true"></i><span class="tooltiptext"
                                                                 style="left: -5px;">Edit User</span></a></li>
-                                                    <li><a href="#" class="tooltips"><img
+                                                    <li><a href="#" class="tooltips"><img class="assign"
                                                                 src="images/user_settings.png"><span class="tooltiptext"
                                                                 style="left: -10px; color: #990033">Assign
                                                                 Roles</span></a></li>
@@ -703,13 +764,57 @@
                $('.search_user').hide();
                $('.add_user').show();
             });
-            $('#close_button').click(function(){
+            $('.assign').click(function(){
+               $('.search_user').hide();
+               $('.add_user').hide();
+               $('.assing_roles').show();
+            });
+            $('.close_button').click(function(){
                $('.search_user').show();
                $('.add_user').hide();
+               $('.assing_roles').hide();
             });
-            $( "#sortable1, #sortable2" ).sortable({
-                connectWith: ".connectedSortable"
-            }).disableSelection();
+            // --------------- Assign Roles
+            $('#btnRight').click(function (e) {
+                var selectedOpts = $('#lstBox1 option:selected');
+                if (selectedOpts.length == 0) {
+                    alert("Nothing to move.");
+                    e.preventDefault();
+                }
+                $('#lstBox2').append($(selectedOpts).clone());
+                $(selectedOpts).remove();
+                e.preventDefault();
+            });
+            $('#btnAllRight').click(function (e) {
+                var selectedOpts = $('#lstBox1 option');
+                if (selectedOpts.length == 0) {
+                    alert("Nothing to move.");
+                    e.preventDefault();
+                }
+                $('#lstBox2').append($(selectedOpts).clone());
+                $(selectedOpts).remove();
+                e.preventDefault();
+            });
+            $('#btnLeft').click(function (e) {
+                var selectedOpts = $('#lstBox2 option:selected');
+                if (selectedOpts.length == 0) {
+                    alert("Nothing to move.");
+                    e.preventDefault();
+                }
+                $('#lstBox1').append($(selectedOpts).clone());
+                $(selectedOpts).remove();
+                e.preventDefault();
+            });
+            $('#btnAllLeft').click(function (e) {
+                var selectedOpts = $('#lstBox2 option');
+                if (selectedOpts.length == 0) {
+                    alert("Nothing to move.");
+                    e.preventDefault();
+                }
+                $('#lstBox1').append($(selectedOpts).clone());
+                $(selectedOpts).remove();
+                e.preventDefault();
+            });
         });
     </script>
 </body>

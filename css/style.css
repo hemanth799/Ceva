@@ -4,7 +4,7 @@
 .heading h2 { font-size: 36px; font-weight: 300; }
 span.red{ color: #911515; font-weight: 500; }
 .search_add{ border: 1px solid #999; padding: 30px 40px 30px 40px; margin-top: 10px; height: 75vh;}
-.add_user { height: 75vh; }
+.add_user, .assing_roles { height: 75vh; }
 .result{ border: 1px solid #999; padding: 10px 10px 10px 25px; margin-top: 10px; height: 75vh;}
 .tools { 
     border: 1px solid #999; 
@@ -164,27 +164,32 @@ input:checked+.slider:before {
 }
 span.Int { margin-left: 58%; }
 span.Ext { margin-left: 5%; }
-#close_button { float: right; cursor: pointer; margin-top: 7px; }
+.close_button { float: right; cursor: pointer; margin-top: 7px; }
 .toggle_check { margin-top: 60px; }
 
 /* ------------------Assign Roles----------------------- */
 
-#sortable1, #sortable2 {
-    border: 1px solid #eee;
-    width: 142px;
-    min-height: 20px;
-    list-style-type: none;
-    margin: 0;
-    padding: 5px 0 0 0;
-    float: left;
-    margin-right: 10px;
-  }
-  #sortable1 li, #sortable2 li {
-    margin: 0 5px 5px 5px;
-    padding: 5px;
-    font-size: 1.2em;
-    width: 120px;
-  }
+#lstBox1, #lstBox2 {
+    height: 300px;
+    overflow: auto;
+    border-radius: unset;
+}
+.subject-info-arrows {
+    margin: 145% 0px;
+}
+.list_heads {
+    padding: 3px 10px;
+    border: 2px solid #ccc;
+    text-align: center;
+    color: #990033;
+    font-weight: 500;
+}
+#btnAllRight, #btnRight, #btnLeft, #btnAllLeft {
+    color: #990033;
+}
+option {
+    font-weight: bold;
+}
 
 /* ------------------MEDIA Queries---------------------- */
 
@@ -194,7 +199,7 @@ span.Ext { margin-left: 5%; }
     .sub_head .tools { top: -100px; width: 112px; }
     .btn_yes { margin-bottom: 5px; width: 100%; }
     .btn_no { width: 100%; }
-    .add_user { height: auto; }
+    .add_user, .assing_roles { height: auto; }
     .search_user h6 { margin-left: 0px !important; }
 }
 
@@ -215,6 +220,7 @@ span.Ext { margin-left: 5%; }
     .Ext, .Int { margin: 0px !important; }
     .toggle_check { margin-top: 0px; }
     .switch { margin: 0px; }
+    .subject-info-arrows { margin: 0px; }
 }
 
 @media screen and (min-width: 768px) {
@@ -252,7 +258,7 @@ span.Ext { margin-left: 5%; }
     .signup_content_main { margin-top: 70px; }
     .forgot_pass_content_main { margin-top: 170px; }
     .result { height: 620px;}
-    .add_user { height: 75.5vh; }
+    .add_user, .search_add, .assing_roles { height: auto; }
     .Int { margin-left: 58% !important; }
     .switch {margin: 0px 34%;}
 }
