@@ -227,11 +227,12 @@ span.Ext { margin-left: 5%; }
     .content_div { max-width: 100%; flex: auto; }
     .user_login .col-md-8, .user_login .col-md-4 { flex: auto; max-width: 100%; }
     .signup_content_main { margin-top: 0px; }
-    .search_add{ height: auto;}
+    .search_add{ height: 730px;}
     .result{ height: 730px;}
     .total_sections { height: 680px; } 
     .toggle_check div {text-align: inherit !important; }
     .Ext, .Int { margin: inherit !important; }
+    .toggle_check { margin-top: 100px; }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1300px) {
