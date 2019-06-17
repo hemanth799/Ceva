@@ -175,7 +175,7 @@ span.Ext { margin-left: 5%; }
     border-radius: unset;
 }
 .subject-info-arrows {
-    margin: 145% 0px;
+    margin: 145% 0px !important;
 }
 .list_heads {
     padding: 3px 10px;
