@@ -169,14 +169,8 @@ span.Ext { margin-left: 5%; }
 
 /* ------------------Assign Roles----------------------- */
 
-#lstBox1, #lstBox2 {
-    height: 300px;
-    overflow: auto;
-    border-radius: unset;
-}
-.subject-info-arrows {
-    margin: 145% 0px !important;
-}
+#lstBox1, #lstBox2 { height: 300px; overflow: auto; border-radius: unset; }
+.subject-info-arrows { margin: 145% 0px; }
 .list_heads {
     padding: 3px 10px;
     border: 2px solid #ccc;
@@ -184,12 +178,8 @@ span.Ext { margin-left: 5%; }
     color: #990033;
     font-weight: 500;
 }
-#btnAllRight, #btnRight, #btnLeft, #btnAllLeft {
-    color: #990033;
-}
-option {
-    font-weight: bold;
-}
+#btnAllRight, #btnRight, #btnLeft, #btnAllLeft { color: #990033; }
+option { font-weight: bold; }
 
 /* ------------------MEDIA Queries---------------------- */
 
@@ -239,12 +229,14 @@ option {
     .toggle_check div {text-align: inherit !important; }
     .Ext, .Int { margin: inherit !important; }
     .toggle_check { margin-top: 100px; }
+    .subject-info-arrows { margin-top: 100px !important; } 
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1300px) {
     .total_sections { height: 650px; }
     .signup_content_main { margin-top: 30px; }
     .result { height: 698px; }
+    .search_add { height: 698px; }
 }
 
 @media screen and (min-width: 1200px) {
@@ -261,4 +253,5 @@ option {
     .add_user, .search_add, .assing_roles { height: auto; }
     .Int { margin-left: 58% !important; }
     .switch {margin: 0px 34%;}
+    .search_add { height: 620px; }
 }
