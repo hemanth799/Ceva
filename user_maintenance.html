@@ -818,13 +818,19 @@
             $('.fa-user-plus').click(function(){
                $('.search_user').hide();
                $('.add_user').show();
+               $('.assing_roles').hide();
+               $('.edit_user').hide();
             });
             $('.assign').click(function(){
                $('.search_user').hide();
+               $('.add_user').hide();
+               $('.edit_user').hide();
                $('.assing_roles').show();
             });
             $('.fa-pencil').click(function(){
                $('.search_user').hide();
+               $('.add_user').hide();
+               $('.assing_roles').hide();
                $('.edit_user').show();
             });
             $('.close_button').click(function(){
