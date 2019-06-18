@@ -164,7 +164,7 @@ input:checked+.slider:before {
 }
 span.Int { margin-left: 58%; }
 span.Ext { margin-left: 5%; }
-.close_button { float: right; cursor: pointer; margin-top: 7px; }
+.close_button { float: right; cursor: pointer; margin-top: 10px; }
 .toggle_check { margin-top: 60px; }
 
 /* ------------------Assign Roles----------------------- */
@@ -180,6 +180,47 @@ span.Ext { margin-left: 5%; }
 }
 #btnAllRight, #btnRight, #btnLeft, #btnAllLeft { color: #990033; }
 option { font-weight: bold; }
+
+/* ------------------Edit Profile----------------------- */
+
+.adjust_middle { margin-top: 60px; margin-bottom: 30px; }
+.container_new {
+    display: block;
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.container_new input { position: absolute; opacity: 0; cursor: pointer; height: 0; width: 0; }
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #BFBFBF;
+    background-color: #fff;
+}
+.container_new:hover input~.checkmark { background-color: #fff; }
+.container_new input:checked~.checkmark { background-color: #990033; }
+.checkmark:after { content: ""; position: absolute; display: none; }
+.container_new input:checked~.checkmark:after { display: block; }
+.container_new .checkmark:after {
+    left: 10px;
+    top: 5px;
+    width: 8px;
+    height: 14px;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
 
 /* ------------------MEDIA Queries---------------------- */
 
@@ -230,6 +271,7 @@ option { font-weight: bold; }
     .Ext, .Int { margin: inherit !important; }
     .toggle_check { margin-top: 100px; }
     .subject-info-arrows { margin-top: 100px !important; } 
+    .adjust_middle { margin-top: 100px; }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1300px) {
@@ -254,4 +296,5 @@ option { font-weight: bold; }
     .Int { margin-left: 58% !important; }
     .switch {margin: 0px 34%;}
     .search_add { height: 620px; }
+    .adjust_middle { margin-top: 60px; }
 }

@@ -259,6 +259,61 @@
                             </div>
                         </div>
                     </div>
+                     <div class="search_add edit_user no_display_section">
+                        <div class="sub_head">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h2 style="display: inline-block;"><span class="red">Edit </span> User</h2>
+                                    <img class="close_button" src="images/close.png">
+                                </div>
+                            </div>
+                        </div>
+                        <form>
+                            <div class="row adjust_middle">
+                                <div class="col-md-5">
+                                    <p style="font-size: 12px; color: #7F7F7F; margin-top: -30px; margin-bottom: 0.5rem;">Active</p>
+                                    <label class="container_new">True
+                                        <input type="checkbox" checked="">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form_input">
+                                <h6>Email</h6>
+                                <input type="text" name="Email" class="input-fields form-control">
+                            </div>
+                            <div class="form_input">
+                                <h6>First Name</h6>
+                                <input type="text" name="FirstName" class="input-fields form-control">
+                            </div>
+                            <div class="form_input">
+                                <h6>Last Name</h6>
+                                <input type="text" name="LastName" class="input-fields form-control">
+                            </div>
+                            <div class="form_input">
+                                <h6>Login</h6>
+                                <input type="text" name="Login" placeholder="loginID@domain.com" class="input-fields form-control" disabled>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                    <h6>Internal User</h6>
+                                    <p style="font-size: 18px; color: #BFBFBF;">False</p>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                    <h6>Expiration Date</h6>
+                                    <p style="font-size: 18px; color: #BFBFBF;">07/05/19</p>
+                                </div>
+                            </div>
+                            <div class="row" style="padding: 0px">
+                                <div class="col-md-6 text-right">
+                                    <input type="submit" value="SUBMIT" class="btn_yes">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="submit" value="CANCEL" class="btn_no">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
                 <div class="col-md-6">
                     <div class="result">
@@ -350,7 +405,7 @@
                                                     <span>Login</span>
                                                     <p>mohammad.weshah@cevalogistics.com</p>
                                                 </div>
-                                                <div class="col-md-4 text-right">
+                                                <div class="col-md-4">
                                                     <span>Expiration Date</span>
                                                     <p>30 May 2019</p>
                                                 </div>
@@ -406,7 +461,7 @@
                                                     <span>Login</span>
                                                     <p>mohammad.weshah@cevalogistics.com</p>
                                                 </div>
-                                                <div class="col-md-4 text-right">
+                                                <div class="col-md-4">
                                                     <span>Expiration Date</span>
                                                     <p>30 May 2019</p>
                                                 </div>
@@ -462,7 +517,7 @@
                                                     <span>Login</span>
                                                     <p>mohammad.weshah@cevalogistics.com</p>
                                                 </div>
-                                                <div class="col-md-4 text-right">
+                                                <div class="col-md-4">
                                                     <span>Expiration Date</span>
                                                     <p>30 May 2019</p>
                                                 </div>
@@ -573,7 +628,7 @@
                                                     <span>Login</span>
                                                     <p>mohammad.weshah@cevalogistics.com</p>
                                                 </div>
-                                                <div class="col-md-4 text-right">
+                                                <div class="col-md-4">
                                                     <span>Expiration Date</span>
                                                     <p>30 May 2019</p>
                                                 </div>
@@ -629,7 +684,7 @@
                                                     <span>Login</span>
                                                     <p>mohammad.weshah@cevalogistics.com</p>
                                                 </div>
-                                                <div class="col-md-4 text-right">
+                                                <div class="col-md-4">
                                                     <span>Expiration Date</span>
                                                     <p>30 May 2019</p>
                                                 </div>
@@ -685,7 +740,7 @@
                                                     <span>Login</span>
                                                     <p>mohammad.weshah@cevalogistics.com</p>
                                                 </div>
-                                                <div class="col-md-4 text-right">
+                                                <div class="col-md-4">
                                                     <span>Expiration Date</span>
                                                     <p>30 May 2019</p>
                                                 </div>
@@ -766,14 +821,19 @@
             });
             $('.assign').click(function(){
                $('.search_user').hide();
-               $('.add_user').hide();
                $('.assing_roles').show();
+            });
+            $('.fa-pencil').click(function(){
+               $('.search_user').hide();
+               $('.edit_user').show();
             });
             $('.close_button').click(function(){
                $('.search_user').show();
                $('.add_user').hide();
                $('.assing_roles').hide();
+               $('.edit_user').hide();
             });
+
             // --------------- Assign Roles
             $('#btnRight').click(function (e) {
                 var selectedOpts = $('#lstBox1 option:selected');
