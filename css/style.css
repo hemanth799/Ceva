@@ -221,6 +221,10 @@ option { font-weight: bold; }
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+/* ------------------User Profile----------------------- */
+
+.user_profile label { font-size: 12px; color: #7F7F7F; margin-bottom: 2px; display: block; }
+.user_profile select { padding: 6px; width: 100%; }
 
 /* ------------------MEDIA Queries---------------------- */
 
@@ -272,6 +276,7 @@ option { font-weight: bold; }
     .toggle_check { margin-top: 100px; }
     .subject-info-arrows { margin-top: 100px !important; } 
     .adjust_middle { margin-top: 100px; }
+    .user_profile select { padding: 4px; width: 100%; }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1300px) {
@@ -297,4 +302,5 @@ option { font-weight: bold; }
     .switch {margin: 0px 34%;}
     .search_add { height: 620px; }
     .adjust_middle { margin-top: 60px; }
+    .user_profile select { padding: 6px; width: 100%; }
 }

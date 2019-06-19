@@ -314,6 +314,130 @@
                             </div>
                         </form>
                     </div>
+                    <div class="search_add user_profile no_display_section">
+                        <div class="sub_head">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4 style="display: inline-block;"><span class="red">User </span>Profile</h4>
+                                    <img class="close_button" src="images/close.png">
+                                </div>
+                            </div>
+                        </div>
+                        <form>
+                            <div class="row" style="margin-top: -20px;">
+                                <div class="col-md-6">
+                                    <div class="form_input">
+                                        <label for="FirstName">First Name</label>
+                                        <input type="text" name="FirstName" id="FirstName" class="input-fields form-control">
+                                    </div>
+                                    <div class="form_input">
+                                        <label for="Email">Email</label>
+                                        <input type="text" name="Email" id="Email" class="input-fields form-control">
+                                    </div>
+                                    <div class="form_input">
+                                        <label for="DateFormat">Date Format</label>
+                                        <select>
+                                            <option value="DateFormat">Select Date Format</option>
+                                            <option value="DateFormat">DD/MM/YYYY</option>
+                                            <option value="DateFormat">MM/DD/YYYY</option>
+                                        </select>
+                                    </div>
+                                    <div class="form_input">
+                                        <label for="Currency">Currency</label>
+                                        <select>
+                                            <option value="Currency">Select Currency</option>
+                                            <option value="Currency">EUR</option>
+                                            <option value="Currency">USD</option>
+                                        </select>
+                                    </div>
+                                    <div class="form_input">
+                                        <label for="Layout">Layout</label>
+                                        <select>
+                                            <option value="Layout">Select Layout</option>
+                                            <option value="Layout">Static</option>
+                                            <option value="Layout">Overlay</option>
+                                            <option value="Layout">Slim</option>
+                                            <option value="Layout">Horizontal</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form_input">
+                                        <label for="LastName">Last Name</label>
+                                        <input type="text" name="LastName" id="LastName" class="input-fields form-control">
+                                    </div>
+                                    <div class="form_input">
+                                        <label for="form_input">Language</label>
+                                        <select id="Language" style="margin-top:0px">
+                                            <option value="Language">Select Language</option>
+                                            <option value="Language">English</option>
+                                            <option value="Language">हिंदी</option>
+                                            <option value="Language">中文</option>
+                                            <option value="Language">Deutsche</option>
+                                        </select>
+                                    </div>
+                                    <div class="form_input">
+                                        <label for="form_input">Time Format</label>
+                                        <select id="TimeFormat" style="margin-top:0px">
+                                            <option value="TimeFormat">Select Time Format</option>
+                                            <option value="TimeFormat">HH:mm:ss</option>
+                                            <option value="TimeFormat">HH:mm</option>
+                                            <option value="TimeFormat">HH:mm:ss a</option>
+                                            <option value="TimeFormat">HH:mm:ss.s a</option>
+                                            <option value="TimeFormat">HH:mm:ss.s</option>
+                                            <option value="TimeFormat">HH:mm a</option>
+                                        </select>
+                                    </div>
+                                    <div class="form_input">
+                                        <label for="form_input">Time Zone</label>
+                                        <select id="TimeZone" style="margin-top:0px">
+                                            <option value="TimeZone">Select Time Zone</option>
+                                            <option value="TimeZone">HH:mm:ss</option>
+                                            <option value="TimeZone">HH:mm</option>
+                                        </select>
+                                    </div>
+                                    <div class="form_input">
+                                        <label for="form_input">Theme</label>
+                                        <select id="Theme" style="margin-top:0px">
+                                            <option value="Theme">Select Theme</option>
+                                            <option value="Theme">CJF</option>
+                                            <option value="Theme">Absolution</option>
+                                            <option value="Theme">Rebirth</option>
+                                            <option value="Theme">Bliss</option>
+                                            <option value="Theme">Dusk</option>
+                                            <option value="Theme">Navy</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="search_sort">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="sort-pad">
+                                        <div id="UserPref">
+                                            <div class="row" style="margin: 10px 0px 15px 0px;">
+                                                <div class="col-md-12" style="margin: 0; padding: 0;">
+                                                    <label class="container_new" style="line-height: 2.5em;">Enable Todo Notification 
+                                                        <input type="checkbox" checked="">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: 10px">
+                                <div class="col-md-6 text-right">
+                                    <input type="submit" value="SUBMIT" class="btn_yes">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="submit" value="CANCEL" class="btn_no">
+                                </div>
+                                <div class="row" style="margin-top: 30px"></div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
                 <div class="col-md-6">
                     <div class="result">
@@ -820,24 +944,35 @@
                $('.add_user').show();
                $('.assing_roles').hide();
                $('.edit_user').hide();
+               $('.user_profile').hide();
             });
             $('.assign').click(function(){
                $('.search_user').hide();
                $('.add_user').hide();
                $('.edit_user').hide();
                $('.assing_roles').show();
+               $('.user_profile').hide();
             });
             $('.fa-pencil').click(function(){
                $('.search_user').hide();
                $('.add_user').hide();
                $('.assing_roles').hide();
                $('.edit_user').show();
+               $('.user_profile').hide();
+            });
+            $('.fa-user-circle-o').click(function(){
+                $('.user_profile').show();
+                $('.search_user').hide();
+                $('.add_user').hide();
+                $('.assing_roles').hide();
+                $('.edit_user').hide();
             });
             $('.close_button').click(function(){
                $('.search_user').show();
                $('.add_user').hide();
                $('.assing_roles').hide();
                $('.edit_user').hide();
+               $('.user_profile').hide();
             });
 
             // --------------- Assign Roles
