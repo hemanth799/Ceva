@@ -33,6 +33,11 @@
                                             <h6>Login</h6>
                                             <input type="text" name="Login" class="input-fields form-control">
                                         </div>
+                                        <div class="form-group">
+                                            <div class="g-recaptcha" data-sitekey="6LfKURIUAAAAAO50vlwWZkyK_G2ywqE52NU7YO0S" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+                                            <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
                                         <div class="row" style="margin-top: 15px">
                                             <div class="col-md-6 text-right">
                                                 <input type="submit" value="SUBMIT" class="btn_yes">
@@ -54,5 +59,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/fcee4edbc0.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </body>
 </html>

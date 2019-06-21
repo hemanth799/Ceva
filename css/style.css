@@ -99,11 +99,11 @@ h6 { font-size: 12px; margin-bottom: 2px; }
 
 /* ------------------Forgot Pass------------------------ */
 
-.forgot_pass_content_main { margin-top: 170px; }
+.forgot_pass_content_main { margin-top: 140px; }
 
 /* ------------------User Signup------------------------ */
 
-.signup_content_main { margin-top: 70px; }
+.signup_content_main { margin-top: 10px; }
 
 /* ------------------Popup------------------------------ */
 
@@ -300,8 +300,8 @@ option { font-weight: bold; }
     .sort ul li { float: left; list-style: none; margin-right: 25px; width: auto; }
     .user_login .col-md-8 { flex: 0 0 66.666667%; max-width: 66.666667%; }
     .user_login .col-md-4 { flex: 0 0 33.333333%; max-width: 33.333333%; }
-    .signup_content_main { margin-top: 70px; }
-    .forgot_pass_content_main { margin-top: 170px; }
+    .signup_content_main { margin-top: 10px; }
+    .forgot_pass_content_main { margin-top: 140px; }
     .result { height: 620px;}
     .add_user, .search_add, .assing_roles { height: auto; }
     .Int { margin-left: 58% !important; }
