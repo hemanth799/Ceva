@@ -163,6 +163,9 @@
                                             <li><a href="#" class="tooltips"><i class="fa fa-search"
                                                         aria-hidden="true"></i><span class="tooltiptext"
                                                         style="right: 2px; width:100px; color: #990033; text-align: right">Search Permissions</span></a></li>
+                                            <li><a href="#" class="tooltips"><i class="fa fa-plus"
+                                                aria-hidden="true"></i><span class="tooltiptext"
+                                                style="right: 2px; width:100px; color: #181717; text-align: right">Add Permissions</span></a></li>
                                         </ul>
                                         <div class="clr_fix"></div>
                                     </div>
@@ -652,6 +655,9 @@
             $('.search_user').hide();
             $('.add_perm').hide();
             $('.edit_user').show();
+        });
+        $('.fa-trash').click(function(){
+            $(this).parents('.user_section').show().delay(50).fadeOut(500);
         });
     });
 </script>
