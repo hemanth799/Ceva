@@ -25,15 +25,17 @@ span.red{ color: #911515; font-weight: 500; }
 .tools .user_settings, 
 .tools .fa-user-circle-o, 
 .tools .fa-user-plus,
-.tools .fa-plus { 
+.tools .fa-plus,
+.tools .fa-users { 
     color: #911515; 
     border: 2px solid #911515; 
     padding: 5px 6px; 
     border-radius: 50%; 
     font-size: 17px;
 }
-.tools .fa-refresh { color: #666; border: 2px solid #666; }
-.tools .fa-refresh:hover { background-color: #999;  color: #fff; border: 2px solid #999; }
+.tools .fa-users { padding: 5px;  }
+.tools .fa-refresh, .tools .fa-users { color: #666; border: 2px solid #666; }
+.tools .fa-refresh:hover,  .tools .fa-users:hover { background-color: #999;  color: #fff; border: 2px solid #999; }
 .tools .fa-user-circle-o { font-size: 30px !important; color: #666; padding: initial; border: none; }
 .tools .fa-user-circle-o:hover { background-color: #fff;  color: #999; }
 .tools .fa-pencil { color: #000; border: 2px solid #000; }
@@ -246,11 +248,21 @@ option { font-weight: bold; }
     background-size: 10px;
     cursor: pointer; 
 }
+
+/* ------------------Permissions------------------------- */
+
 .perm_right p { font-size: 10px; color: #000; font-weight: bold; margin: 0px 0px 2px 0px; line-height: 1;}
 .perm_right span { font-size: 8px; color: #990033; font-weight: bold; }
 .permissions .user_tools { height: 10px; }
 .permissions .user_tools .tools { top: -10px; }
 .permissions .user_login span { color: #990033; font-weight: bold; }
+
+/* ------------------Role Maintenance-------------------- */
+
+.role_right p { font-size: 10px; color: #000; font-weight: bold; margin: 0px 0px 2px 0px; line-height: 1;}
+.role_right span { font-size: 8px; color: #990033; font-weight: bold; }
+.role_right .total_sections { height: 555px; }
+.role_right p{ margin-bottom: 5px; }
 
 /* ------------------MEDIA Queries---------------------- */
 
@@ -282,6 +294,12 @@ option { font-weight: bold; }
     .toggle_check { margin-top: 0px; }
     .switch { margin: 0px; }
     .subject-info-arrows { margin: 0px; }
+    .permissions {margin-top: 50px;}
+    .permissions .total_sections { height: 580px; }
+}
+
+@media screen and (min-width: 369px) {
+    .add_perm .tools {top: -75px;}
 }
 
 @media screen and (min-width: 768px) {
@@ -303,10 +321,12 @@ option { font-weight: bold; }
     .subject-info-arrows { margin-top: 100px !important; } 
     .adjust_middle { margin-top: 100px; }
     .user_profile select { padding: 4px; width: 100%; }
+    .permissions {margin-top: 10px;}
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1300px) {
     .total_sections { height: 650px; }
+    .role .total_sections { height: 555px; }
     .signup_content_main { margin-top: 30px; }
     .result { height: 698px; }
     .search_add { height: 698px; }
@@ -314,6 +334,7 @@ option { font-weight: bold; }
 
 @media screen and (min-width: 1200px) {
     .total_sections { height: 580px; }
+    .role .total_sections { height: 555px; }
     .user_section .pic_div { display: block; }
     .user_section .content_div { max-width: 83.333333%; }
     .user_pic { display: block; }
