@@ -266,12 +266,21 @@ option { font-weight: bold; }
 .role_right .total_sections { height: 555px; }
 .role_right p{ margin-bottom: 5px; }
 .assigned_user .total_sections {     height: 390px; }
-.assigned_user .sort { margin-top: 30px; border-top: 1px solid #ddd; padding: 7px 0px; border-bottom: 1px solid #ddd; }
+.assigned_user .sort { border-top: 1px solid #ddd; padding: 7px 0px; border-bottom: 1px solid #ddd; }
 .assigned_user .role_right span { font-size: 14px; }
 .assigned_user .role_right p { font-size: 12px; }
 .assigned_user .user_tools { height: 0px; }
 .assigned_user .user_tools .tools { top: -15px; }
 .assigned_user .user_section { margin: 10px 10px 25px 0px; }
+
+/* ------------------Role Permission Assignment--------- */
+
+.role_perm .user_tools, .role_perm_main .user_tools { height: 10px;}
+.role_perm .user_tools .tools, .role_perm_main .user_tools .tools { top: 0px; }
+.role_perm_main, .role_perm { height:790px; }
+.role_perm_main .total_sections { height:460px; }
+.role_perm .total_sections { height:460px; }
+.role_perm { padding-right: 18px; }
 
 /* ------------------MEDIA Queries---------------------- */
 
@@ -359,4 +368,7 @@ option { font-weight: bold; }
     .search_add { height: 620px; }
     .adjust_middle { margin-top: 60px; }
     .user_profile select { padding: 6px; width: 100%; }
+    .role_perm_main, .role_perm { height:790px; }
+    .role_perm_main .total_sections { height:460px; }
+    .role_perm .total_sections { height:460px; }
 }
