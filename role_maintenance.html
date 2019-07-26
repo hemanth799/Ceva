@@ -80,7 +80,7 @@
                             </div>
                         </form>
                     </div>
-                    <div class="search_add search_user no_display_section">
+                    <div class="search_add search_user yes_display_section">
                         <div class="sub_head">
                             <div class="row">
                                 <div class="col-md-8">
@@ -187,7 +187,7 @@
                             </div>
                         </form>
                     </div>
-                    <div class="search_add assigned_user yes_display_section">
+                    <div class="search_add assigned_user no_display_section">
                         <div class="sub_head" style="margin-bottom: 10px;">
                             <div class="row">
                                 <div class="col-md-8">
@@ -226,8 +226,8 @@
                                         <div class="clr_fix"></div>
                                     </div>
                                 </div>
-                                    <div class="col-md-12">
-                                        <div class="showing_rows_count" style="position: absolute; right: 14px;">
+                                    <div class="col-md-12" style="margin-top: 40px">
+                                        <div class="showing_rows_count" style="position: absolute; top: -10px; right: 14px;">
                                             Showing 4 of 30
                                         </div>
                                     </div>
@@ -859,18 +859,30 @@
             $('.search_user').hide();
             $('.add_perm').show();
             $('.edit_user').hide();
+            $('.assigned_user').hide();
         });
         $('.fa-search').click(function () {
             $('.search_user').show();
             $('.add_perm').hide();
             $('.edit_user').hide();
+            $('.assigned_user').hide();
         })
         $('.fa-pencil').click(function () {
             $('.search_user').hide();
             $('.add_perm').hide();
             $('.edit_user').show();
+            $('.assigned_user').hide();
+        });
+        $('.fa-users').click(function(){
+            $('.search_user').hide();
+            $('.add_perm').hide();
+            $('.edit_user').hide();
+            $('.assigned_user').show();
         });
         $('.fa-trash').click(function () {
+            $(this).parents('.user_section').show().delay(50).fadeOut(500);
+        });
+        $('.fa-user-times').click(function () {
             $(this).parents('.user_section').show().delay(50).fadeOut(500);
         });
     });
