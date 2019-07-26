@@ -26,7 +26,8 @@ span.red{ color: #911515; font-weight: 500; }
 .tools .fa-user-circle-o, 
 .tools .fa-user-plus,
 .tools .fa-plus,
-.tools .fa-users { 
+.tools .fa-users,
+.fa-user-times { 
     color: #911515; 
     border: 2px solid #911515; 
     padding: 5px 6px; 
@@ -41,7 +42,8 @@ span.red{ color: #911515; font-weight: 500; }
 .tools .fa-pencil { color: #000; border: 2px solid #000; }
 .tools .fa-pencil:hover, .tools .fa-user-plus:hover, .tools .fa-plus:hover { background-color: #000; color: #fff; }
 .tools .fa-user-plus, .tools .fa-plus { border: 2px solid #000; color: #000; padding: 5px 7px;}
-.tools .fa-search:hover, .tools .fa-trash:hover { color: #fff; background-color: #990033; }
+.tools .fa-search:hover, .tools .fa-trash:hover, .fa-user-times:hover { color: #fff; background-color: #990033; }
+.fa-user-times { font-size: 12px !important; padding: 7px}
 .tooltips { position: relative; display: inline-block; }
 .tooltips .tooltiptext {
     visibility: hidden;
@@ -263,6 +265,13 @@ option { font-weight: bold; }
 .role_right span { font-size: 8px; color: #990033; font-weight: bold; }
 .role_right .total_sections { height: 555px; }
 .role_right p{ margin-bottom: 5px; }
+.assigned_user .total_sections {     height: 390px; }
+.assigned_user .sort { margin-top: 30px; border-top: 1px solid #ddd; padding: 7px 0px; border-bottom: 1px solid #ddd; }
+.assigned_user .role_right span { font-size: 14px; }
+.assigned_user .role_right p { font-size: 12px; }
+.assigned_user .user_tools { height: 0px; }
+.assigned_user .user_tools .tools { top: -15px; }
+.assigned_user .user_section { margin: 10px 10px 25px 0px; }
 
 /* ------------------MEDIA Queries---------------------- */
 
