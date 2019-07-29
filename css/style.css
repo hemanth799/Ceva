@@ -282,7 +282,24 @@ option { font-weight: bold; }
 .role_perm .total_sections { height:460px; }
 .role_perm { padding-right: 18px; }
 
-/* ------------------MEDIA Queries---------------------- */
+/* -------------------Todo page------------------------- */
+
+.search_todo, .todo { height: 700px; }
+.search_todo .form_input, .add_todo .form_input { position: relative; }
+.search_todo .fa-search, 
+.search_todo .fa-calendar,
+.add_todo .fa-search, 
+.add_todo .fa-calendar { position: absolute; top: 27px; right: 10px; cursor: pointer; color: #990033; }
+.add_todo .choose_file { height: 80px;}
+.todo_right p { font-size: 10px; color: #000; font-weight: bold; margin: 0px 0px 2px 0px; line-height: 1;}
+.todo_right span { font-size: 8px; color: #990033; font-weight: bold; }
+.todo_right .total_sections { height: 555px; }
+.todo_right p{ margin-bottom: 5px; }
+.todo .user_tools { height: 0px; }
+.todo .user_tools .tools { top: -15px;}
+.todo .total_sections { height: 630px; }
+
+/* ---`---------------MEDIA Queries---------------------- */
 
 @media screen and (min-width: 320px) and (max-width: 350px) {
     .user_login p, .user_email p { font-size: 9px; }
@@ -371,4 +388,5 @@ option { font-weight: bold; }
     .role_perm_main, .role_perm { height:790px; }
     .role_perm_main .total_sections { height:460px; }
     .role_perm .total_sections { height:460px; }
+    .search_todo, .todo { height: 700px; }
 }
