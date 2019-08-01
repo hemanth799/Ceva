@@ -29,7 +29,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="search_add add_perm no_display_section">
+                    <div class="search_add add_role no_display_section">
                         <div class="sub_head">
                             <div class="row">
                                 <div class="col-md-8">
@@ -72,7 +72,7 @@
                                                 <input type="button" value="SUBMIT" class="btn_yes">
                                             </div>
                                             <div class="col-md-6">
-                                                <input type="button" value="CANCEL" class="btn_no">
+                                                <input type="button" value="Reset" class="btn_no">
                                             </div>
                                         </div>
                                     </div>
@@ -80,7 +80,7 @@
                             </div>
                         </form>
                     </div>
-                    <div class="search_add search_user yes_display_section">
+                    <div class="search_add search_role yes_display_section">
                         <div class="sub_head">
                             <div class="row">
                                 <div class="col-md-8">
@@ -123,7 +123,7 @@
                                                 <input type="button" value="SUBMIT" class="btn_yes">
                                             </div>
                                             <div class="col-md-6">
-                                                <input type="button" value="CANCEL" class="btn_no">
+                                                <input type="button" value="Reset" class="btn_no">
                                             </div>
                                         </div>
                                     </div>
@@ -131,7 +131,7 @@
                             </div>
                         </form>
                     </div>
-                    <div class="search_add edit_user no_display_section">
+                    <div class="search_add edit_role no_display_section">
                         <div class="sub_head">
                             <div class="row">
                                 <div class="col-md-8">
@@ -179,7 +179,7 @@
                                                 <input type="button" value="SUBMIT" class="btn_yes">
                                             </div>
                                             <div class="col-md-6">
-                                                <input type="button" value="CANCEL" class="btn_no">
+                                                <input type="button" value="Reset" class="btn_no">
                                             </div>
                                         </div>
                                     </div>
@@ -856,27 +856,27 @@
             $('.alert_popup_error').show().delay(2000).fadeOut(400);
         });
         $('.fa-plus').click(function () {
-            $('.search_user').hide();
-            $('.add_perm').show();
-            $('.edit_user').hide();
+            $('.search_role').hide();
+            $('.add_role').show();
+            $('.edit_role').hide();
             $('.assigned_user').hide();
         });
         $('.fa-search').click(function () {
-            $('.search_user').show();
-            $('.add_perm').hide();
-            $('.edit_user').hide();
+            $('.search_role').show();
+            $('.add_role').hide();
+            $('.edit_role').hide();
             $('.assigned_user').hide();
         })
         $('.fa-pencil').click(function () {
-            $('.search_user').hide();
-            $('.add_perm').hide();
-            $('.edit_user').show();
+            $('.search_role').hide();
+            $('.add_role').hide();
+            $('.edit_role').show();
             $('.assigned_user').hide();
         });
         $('.fa-users').click(function(){
-            $('.search_user').hide();
-            $('.add_perm').hide();
-            $('.edit_user').hide();
+            $('.search_role').hide();
+            $('.add_role').hide();
+            $('.edit_role').hide();
             $('.assigned_user').show();
         });
         $('.fa-trash').click(function () {

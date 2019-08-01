@@ -5,7 +5,7 @@
 span.red{ color: #911515; font-weight: 500; }
 .search_add{ border: 1px solid #999; padding: 30px 40px 30px 40px; margin-top: 10px; height: 75vh;}
 .add_user, .assing_roles { height: 75vh; }
-.result{ border: 1px solid #999; padding: 10px 10px 10px 25px; margin-top: 10px; height: 75vh;}
+.result{ border: 1px solid #999; padding: 10px 10px 10px 25px; margin-top: 40px; height: 75vh;}
 .tools { 
     border: 1px solid #999; 
     padding: 2px; 
@@ -284,12 +284,13 @@ option { font-weight: bold; }
 
 /* -------------------Todo page------------------------- */
 
-.search_todo, .todo { height: 700px; }
-.search_todo .form_input, .add_todo .form_input { position: relative; }
+.search_todo, .add_todo, .todo, .edit_todo { height: 700px; }
+.search_todo .form_input, .add_todo .form_input, .edit_todo .form_input { position: relative; }
 .search_todo .fa-search, 
 .search_todo .fa-calendar,
-.add_todo .fa-search, 
-.add_todo .fa-calendar { position: absolute; top: 27px; right: 10px; cursor: pointer; color: #990033; }
+.edit_todo .fa-calendar,
+.add_todo .fa-calendar,
+.edit_todo .fa-calendar { position: absolute; top: 27px; right: 10px; cursor: pointer; color: #990033; }
 .add_todo .choose_file { height: 80px;}
 .todo_right p { font-size: 10px; color: #000; font-weight: bold; margin: 0px 0px 2px 0px; line-height: 1;}
 .todo_right span { font-size: 8px; color: #990033; font-weight: bold; }
@@ -298,8 +299,36 @@ option { font-weight: bold; }
 .todo .user_tools { height: 0px; }
 .todo .user_tools .tools { top: -15px;}
 .todo .total_sections { height: 630px; }
+.edit_todo .choose_file {height: 80px;}
+.search_ldap_user {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 9; 
+}
+.ldap_section { 
+    width: 600px; 
+    margin: 0px auto; 
+    border: 1px solid #999; 
+    padding: 20px; 
+    position: absolute; 
+    top: 25%; 
+    left: 32%; 
+    background: #fff; 
+}
+.ldap_section .total_sections { height: 215px; }
+.ldap_section .total_sections .user_section { margin: 10px; }
 
-/* ---`---------------MEDIA Queries---------------------- */
+/* -------------------User Admin------------------------- */
+
+.user_admin table tr td .row div { height: 30px; }
+.user_admin table tr td { width: 50%; border: 1px solid #999; text-align: center; }
+.user_admin table tr td .btn_yes { width: 60%; }
+
+/* -------------------MEDIA Queries---------------------- */
 
 @media screen and (min-width: 320px) and (max-width: 350px) {
     .user_login p, .user_email p { font-size: 9px; }
@@ -309,6 +338,7 @@ option { font-weight: bold; }
     .btn_no { width: 100%; }
     .add_user, .assing_roles { height: auto; }
     .search_user h6 { margin-left: 0px !important; }
+    .assigned_user .tools { top: -130px; }
 }
 
 @media screen and (min-width: 320px) {
@@ -316,6 +346,8 @@ option { font-weight: bold; }
     .user_tools { height: 20px; position: relative; }
     .user_tools .tools { width: auto; right: -15px; top: 5px; }
     .sub_head .tools { top: -100px; width: 112px; }
+    .search_user { height: 430px !important; }
+    .search_user .tools { top: -75px; }
     .btn_yes { margin-bottom: 5px; width: 100%; }
     .btn_no { width: 100%; }
     .sort ul li { width: 50%; margin: 0px; }
@@ -331,13 +363,23 @@ option { font-weight: bold; }
     .subject-info-arrows { margin: 0px; }
     .permissions {margin-top: 50px;}
     .permissions .total_sections { height: 580px; }
+    .edit_user .tools, 
+    .search_role .tools, 
+    .add_role .tools, 
+    .edit_role .tools, 
+    .edit_todo .tools, 
+    .add_todo .tools, 
+    .search_todo .tools { top: -76px; }
+    .role_perm_main select { margin-bottom: 0px !important; }
 }
 
 @media screen and (min-width: 369px) {
-    .add_perm .tools {top: -75px;}
+    .add_role .tools {top: -75px;}
+    .assigned_user .tools { top: -76px; }
 }
 
 @media screen and (min-width: 768px) {
+    .result { margin-top: 10px;}
     .user_tools { height: 20px; position: relative; }
     .user_tools .tools { width: auto; right: -15px; top: 5px; }
     .sub_head .tools { top: -40px; }
@@ -357,6 +399,10 @@ option { font-weight: bold; }
     .adjust_middle { margin-top: 100px; }
     .user_profile select { padding: 4px; width: 100%; }
     .permissions {margin-top: 10px;}
+    .role_perm_main select { margin-bottom: 90px !important; }
+    .role_perm, .role_perm_main { height: 870px; }
+    .role_perm .total_sections, .role_perm_main .total_sections { height: 500px; }
+    .todo .total_sections { height: 570px; }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1300px) {
@@ -365,6 +411,7 @@ option { font-weight: bold; }
     .signup_content_main { margin-top: 30px; }
     .result { height: 698px; }
     .search_add { height: 698px; }
+    .todo .total_sections { height: 570px; }
 }
 
 @media screen and (min-width: 1200px) {
@@ -383,10 +430,13 @@ option { font-weight: bold; }
     .Int { margin-left: 58% !important; }
     .switch {margin: 0px 34%;}
     .search_add { height: 620px; }
+    .search_user { height: 670px !important; }
     .adjust_middle { margin-top: 60px; }
     .user_profile select { padding: 6px; width: 100%; }
+    .permissions .total_sections { height: 605px; }
     .role_perm_main, .role_perm { height:790px; }
     .role_perm_main .total_sections { height:460px; }
     .role_perm .total_sections { height:460px; }
-    .search_todo, .todo { height: 700px; }
+    .search_todo, .add_todo, .todo, .edit_todo { height: 700px; }
+    .todo .total_sections { height: 630px; }
 }

@@ -29,7 +29,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="search_add add_todo yes_display_section">
+                    <div class="search_add add_todo no_display_section">
                         <div class="sub_head">
                             <div class="row">
                                 <div class="col-md-8">
@@ -97,7 +97,7 @@
                             </div>
                         </form>
                     </div>
-                    <div class="search_add search_todo no_display_section">
+                    <div class="search_add search_todo yes_display_section">
                         <div class="sub_head">
                             <div class="row">
                                 <div class="col-md-8">
@@ -136,7 +136,7 @@
                                         <div class="form_input">
                                             <h6>Owner</h6>
                                             <input type="text" name="Login" class="input-fields form-control">
-                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                            <i class="fa fa-search search_spl" aria-hidden="true"></i>
                                         </div>
                                         <div class="form_input">
                                             <h6>Start Date</h6>
@@ -170,7 +170,7 @@
                         <div class="sub_head">
                             <div class="row">
                                 <div class="col-md-8">
-                                    <h4><span class="red">Edit </span>Role</h4>
+                                    <h4><span class="red">Edit </span>Todo</h4>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="tools" style="width: auto; padding: 3px 1px;">
@@ -200,14 +200,30 @@
                                 <div class="col-md-12">
                                     <div style="margin-top: 10px;">
                                         <div class="form_input">
-                                            <h6>Role</h6>
-                                            <input type="text" disabled value="Role Name" disabled name="Login"
-                                                class="input-fields form-control">
+                                            <h6>Title</h6>
+                                            <input type="text" value="Title name" disabled name="Login" class="input-fields form-control">
+                                        </div>
+                                        <div class="form_input">
+                                            <h6>Priority</h6>
+                                            <input type="text" value="Priority" disabled name="Login" class="input-fields form-control">
+                                        </div>
+                                        <div class="form_input">
+                                            <h6>Owner</h6>
+                                            <input type="text" value="Owner" disabled name="Login" class="input-fields form-control">
+                                        </div>
+                                        <div class="form_input">
+                                            <h6>Due Date</h6>
+                                            <input type="text" value="07/08/2019 07:00pm" disabled name="Login" class="input-fields form-control">
+                                            <i class="fa fa-calendar" aria-hidden="true"></i>
                                         </div>
                                         <div class="form_input">
                                             <h6>Description</h6>
-                                            <textarea name="Email" style="resize: none;" rows="8"
+                                            <textarea name="LastName" style="resize: none;" rows="3"
                                                 class="input-fields form-control">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</textarea>
+                                        </div>
+                                        <div class="form_input">
+                                            <h6 class="text-right">Optional</h6>
+                                            <input type="file" class="choose_file"/>
                                         </div>
                                         <div class="row" style="margin-top: 25px;margin-bottom: 5px;">
                                             <div class="col-md-6 text-right">
@@ -215,305 +231,6 @@
                                             </div>
                                             <div class="col-md-6">
                                                 <input type="button" value="CANCEL" class="btn_no">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="search_add assigned_user no_display_section">
-                        <div class="sub_head" style="margin-bottom: 10px;">
-                            <div class="row">
-                                <div class="col-md-8">
-                                    <h4><span class="red">Assigned </span>Users for Role :</h4>
-                                    <span><b>Role Name</b></span>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="tools" style="width: auto; padding: 3px 1px;">
-                                        <ul>
-                                            <li><a href="#" class="tooltips"><i class="fa fa-search"
-                                                        aria-hidden="true"></i><span class="tooltiptext"
-                                                        style="right: 2px; width:100px; color: #990033; text-align: right">Search
-                                                        Role</span></a></li>
-                                            <li><a href="#" class="tooltips"><i class="fa fa-plus"
-                                                        aria-hidden="true"></i><span class="tooltiptext"
-                                                        style="right: 2px; width:100px; color: #181717; text-align: right">Add
-                                                        Role</span></a></li>
-                                        </ul>
-                                        <div class="clr_fix"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <form>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="sort" style="border-top: 1px solid #ddd; padding: 7px 0px; border-bottom: 1px solid #ddd;">
-                                        <ul>
-                                            <li class="active"> <a href="#"><i class="fa fa-sort" aria-hidden="true"></i>
-                                                    User Login</a></li>
-                                            <li> <a href="#"><i class="fa fa-sort" aria-hidden="true"></i> First Name</a>
-                                            </li>
-                                            <li> <a href="#"><i class="fa fa-sort" aria-hidden="true"></i> Last Name</a>
-                                            </li>
-                                        </ul>
-                                        <div class="clr_fix"></div>
-                                    </div>
-                                </div>
-                                    <div class="col-md-12" style="margin-top: 40px">
-                                        <div class="showing_rows_count" style="position: absolute; top: -10px; right: 14px;">
-                                            Showing 4 of 30
-                                        </div>
-                                    </div>
-                                <div class="col-md-12">
-                                    <div class="total_sections">
-                                        <div class="user_section">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="row">
-                                                        <div class="col-md-6 role_right">
-                                                            <span>User Login</span>
-                                                            <p>User login name</p>
-                                                        </div>
-                                                        <div class="col-md-6 role_right">
-                                                            <span>User Login</span>
-                                                            <p>User login name</p>
-                                                        </div>
-                                                        <div class="col-md-12 role_right">
-                                                            <span>User Login</span>
-                                                            <p>User login name</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="user_tools">
-                                                        <div class="tools">
-                                                            <ul>
-                                                                <li><a href="#" class="tooltips"><i class="fa fa-user-times"
-                                                                            aria-hidden="true"></i><span class="tooltiptext"
-                                                                            style="left: -40px; width: 100px; color: #990033">Unassigne Role</span></a>
-                                                                </li>
-                                                            </ul>
-                                                            <div class="clr_fix"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="user_section">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="row">
-                                                        <div class="col-md-6 role_right">
-                                                            <span>User Login</span>
-                                                            <p>User login name</p>
-                                                        </div>
-                                                        <div class="col-md-6 role_right">
-                                                            <span>User Login</span>
-                                                            <p>User login name</p>
-                                                        </div>
-                                                        <div class="col-md-12 role_right">
-                                                            <span>User Login</span>
-                                                            <p>User login name</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="user_tools">
-                                                        <div class="tools">
-                                                            <ul>
-                                                                <li><a href="#" class="tooltips"><i class="fa fa-user-times"
-                                                                            aria-hidden="true"></i><span class="tooltiptext"
-                                                                            style="left: -40px; width: 100px; color: #990033">Unassigne Role</span></a>
-                                                                </li>
-                                                            </ul>
-                                                            <div class="clr_fix"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="user_section">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="row">
-                                                        <div class="col-md-6 role_right">
-                                                            <span>User Login</span>
-                                                            <p>User login name</p>
-                                                        </div>
-                                                        <div class="col-md-6 role_right">
-                                                            <span>User Login</span>
-                                                            <p>User login name</p>
-                                                        </div>
-                                                        <div class="col-md-12 role_right">
-                                                            <span>User Login</span>
-                                                            <p>User login name</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="user_tools">
-                                                        <div class="tools">
-                                                            <ul>
-                                                                <li><a href="#" class="tooltips"><i class="fa fa-user-times"
-                                                                            aria-hidden="true"></i><span class="tooltiptext"
-                                                                            style="left: -40px; width: 100px; color: #990033">Unassigne Role</span></a>
-                                                                </li>
-                                                            </ul>
-                                                            <div class="clr_fix"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="user_section">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="row">
-                                                        <div class="col-md-6 role_right">
-                                                            <span>User Login</span>
-                                                            <p>User login name</p>
-                                                        </div>
-                                                        <div class="col-md-6 role_right">
-                                                            <span>User Login</span>
-                                                            <p>User login name</p>
-                                                        </div>
-                                                        <div class="col-md-12 role_right">
-                                                            <span>User Login</span>
-                                                            <p>User login name</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="user_tools">
-                                                        <div class="tools">
-                                                            <ul>
-                                                                <li><a href="#" class="tooltips"><i class="fa fa-user-times"
-                                                                            aria-hidden="true"></i><span class="tooltiptext"
-                                                                            style="left: -40px; width: 100px; color: #990033">Unassigne Role</span></a>
-                                                                </li>
-                                                            </ul>
-                                                            <div class="clr_fix"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="user_section">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="row">
-                                                        <div class="col-md-6 role_right">
-                                                            <span>User Login</span>
-                                                            <p>User login name</p>
-                                                        </div>
-                                                        <div class="col-md-6 role_right">
-                                                            <span>User Login</span>
-                                                            <p>User login name</p>
-                                                        </div>
-                                                        <div class="col-md-12 role_right">
-                                                            <span>User Login</span>
-                                                            <p>User login name</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="user_tools">
-                                                        <div class="tools">
-                                                            <ul>
-                                                                <li><a href="#" class="tooltips"><i class="fa fa-user-times"
-                                                                            aria-hidden="true"></i><span class="tooltiptext"
-                                                                            style="left: -40px; width: 100px; color: #990033">Unassigne Role</span></a>
-                                                                </li>
-                                                            </ul>
-                                                            <div class="clr_fix"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="user_section">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="row">
-                                                        <div class="col-md-6 role_right">
-                                                            <span>User Login</span>
-                                                            <p>User login name</p>
-                                                        </div>
-                                                        <div class="col-md-6 role_right">
-                                                            <span>User Login</span>
-                                                            <p>User login name</p>
-                                                        </div>
-                                                        <div class="col-md-12 role_right">
-                                                            <span>User Login</span>
-                                                            <p>User login name</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="user_tools">
-                                                        <div class="tools">
-                                                            <ul>
-                                                                <li><a href="#" class="tooltips"><i class="fa fa-user-times"
-                                                                            aria-hidden="true"></i><span class="tooltiptext"
-                                                                            style="left: -40px; width: 100px; color: #990033">Unassigne Role</span></a>
-                                                                </li>
-                                                            </ul>
-                                                            <div class="clr_fix"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="user_section">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="row">
-                                                        <div class="col-md-6 role_right">
-                                                            <span>User Login</span>
-                                                            <p>User login name</p>
-                                                        </div>
-                                                        <div class="col-md-6 role_right">
-                                                            <span>User Login</span>
-                                                            <p>User login name</p>
-                                                        </div>
-                                                        <div class="col-md-12 role_right">
-                                                            <span>User Login</span>
-                                                            <p>User login name</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="user_tools">
-                                                        <div class="tools">
-                                                            <ul>
-                                                                <li><a href="#" class="tooltips"><i class="fa fa-user-times"
-                                                                            aria-hidden="true"></i><span class="tooltiptext"
-                                                                            style="left: -40px; width: 100px; color: #990033">Unassigne Role</span></a>
-                                                                </li>
-                                                            </ul>
-                                                            <div class="clr_fix"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="user_section">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="row">
-                                                        <div class="col-md-6 role_right">
-                                                            <span>User Login</span>
-                                                            <p>User login name</p>
-                                                        </div>
-                                                        <div class="col-md-6 role_right">
-                                                            <span>User Login</span>
-                                                            <p>User login name</p>
-                                                        </div>
-                                                        <div class="col-md-12 role_right">
-                                                            <span>User Login</span>
-                                                            <p>User login name</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="user_tools">
-                                                        <div class="tools">
-                                                            <ul>
-                                                                <li><a href="#" class="tooltips"><i class="fa fa-user-times"
-                                                                            aria-hidden="true"></i><span class="tooltiptext"
-                                                                            style="left: -40px; width: 100px; color: #990033">Unassigne Role</span></a>
-                                                                </li>
-                                                            </ul>
-                                                            <div class="clr_fix"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -616,6 +333,326 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="user_section">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="user_heading">
+                                            <table style="width: 100%;">
+                                                <tr>
+                                                    <td><b>Title</b> Name</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="todo_right">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <span>Priority</span>
+                                                    <p>1</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <span>Owner</span>
+                                                    <p>Owner Name</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <span>Due Date</span>
+                                                    <p>17/08/2019 06:00pm</p>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <span>Description</span>
+                                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user_tools">
+                                            <div class="tools">
+                                                <ul>
+                                                    <li><a href="#" class="tooltips"><i class="fa fa-pencil"
+                                                                aria-hidden="true"></i><span class="tooltiptext"
+                                                                style="left: -5px;">Edit Todo</span></a></li>
+                                                    <li><a href="#" class="tooltips"><i class="fa fa-trash"
+                                                                aria-hidden="true"></i><span class="tooltiptext"
+                                                                style="left: -25px; color: #990033">Delete Todo</span></a>
+                                                    </li>
+                                                </ul>
+                                                <div class="clr_fix"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user_section">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="user_heading">
+                                            <table style="width: 100%;">
+                                                <tr>
+                                                    <td><b>Title</b> Name</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="todo_right">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <span>Priority</span>
+                                                    <p>1</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <span>Owner</span>
+                                                    <p>Owner Name</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <span>Due Date</span>
+                                                    <p>17/08/2019 06:00pm</p>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <span>Description</span>
+                                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user_tools">
+                                            <div class="tools">
+                                                <ul>
+                                                    <li><a href="#" class="tooltips"><i class="fa fa-pencil"
+                                                                aria-hidden="true"></i><span class="tooltiptext"
+                                                                style="left: -5px;">Edit Todo</span></a></li>
+                                                    <li><a href="#" class="tooltips"><i class="fa fa-trash"
+                                                                aria-hidden="true"></i><span class="tooltiptext"
+                                                                style="left: -25px; color: #990033">Delete Todo</span></a>
+                                                    </li>
+                                                </ul>
+                                                <div class="clr_fix"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user_section">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="user_heading">
+                                            <table style="width: 100%;">
+                                                <tr>
+                                                    <td><b>Title</b> Name</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="todo_right">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <span>Priority</span>
+                                                    <p>1</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <span>Owner</span>
+                                                    <p>Owner Name</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <span>Due Date</span>
+                                                    <p>17/08/2019 06:00pm</p>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <span>Description</span>
+                                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user_tools">
+                                            <div class="tools">
+                                                <ul>
+                                                    <li><a href="#" class="tooltips"><i class="fa fa-pencil"
+                                                                aria-hidden="true"></i><span class="tooltiptext"
+                                                                style="left: -5px;">Edit Todo</span></a></li>
+                                                    <li><a href="#" class="tooltips"><i class="fa fa-trash"
+                                                                aria-hidden="true"></i><span class="tooltiptext"
+                                                                style="left: -25px; color: #990033">Delete Todo</span></a>
+                                                    </li>
+                                                </ul>
+                                                <div class="clr_fix"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user_section">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="user_heading">
+                                            <table style="width: 100%;">
+                                                <tr>
+                                                    <td><b>Title</b> Name</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="todo_right">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <span>Priority</span>
+                                                    <p>1</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <span>Owner</span>
+                                                    <p>Owner Name</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <span>Due Date</span>
+                                                    <p>17/08/2019 06:00pm</p>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <span>Description</span>
+                                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user_tools">
+                                            <div class="tools">
+                                                <ul>
+                                                    <li><a href="#" class="tooltips"><i class="fa fa-pencil"
+                                                                aria-hidden="true"></i><span class="tooltiptext"
+                                                                style="left: -5px;">Edit Todo</span></a></li>
+                                                    <li><a href="#" class="tooltips"><i class="fa fa-trash"
+                                                                aria-hidden="true"></i><span class="tooltiptext"
+                                                                style="left: -25px; color: #990033">Delete Todo</span></a>
+                                                    </li>
+                                                </ul>
+                                                <div class="clr_fix"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="search_ldap_user no_display_section">
+        <div class="ldap_section">
+            <div class="row">
+                <div class="col-md-11">
+                    <h4><span class="red">Add </span>Todo</h4>
+                </div>
+                <div class="col-md-1">
+                    <img src="images/close.png" class="close_button"/>
+                </div>
+                <div class="col-md-12">
+                    <div class="form_input">
+                        <h6>Name</h6>
+                        <input type="text" name="Login" class="input-fields form-control">
+                    </div>
+                </div>
+                <hr>
+                <div class="col-md-12">
+                    <div class="sort">
+                        <ul>
+                            <li class="active"> <a href="#"><i class="fa fa-sort" aria-hidden="true"></i>
+                                    Id</a></li>
+                            <li> <a href="#"><i class="fa fa-sort" aria-hidden="true"></i> Priority</a>
+                            </li>
+                            <li> <a href="#"><i class="fa fa-sort" aria-hidden="true"></i> Title</a>
+                            </li>
+                            <li> <a href="#"><i class="fa fa-sort" aria-hidden="true"></i> Due Date</a>
+                            </li>
+                            <li> <a href="#"><i class="fa fa-sort" aria-hidden="true"></i> Owner</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="showing_rows_count">
+                        Showing 4 of 30
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="total_sections">
+                        <div class="user_section">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="todo_right">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <span>Priority</span>
+                                                <p>1</p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <span>Owner</span>
+                                                <p>Owner Name</p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <span>Due Date</span>
+                                                <p>17/08/2019 06:00pm</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user_section">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="todo_right">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <span>Priority</span>
+                                                <p>1</p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <span>Owner</span>
+                                                <p>Owner Name</p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <span>Due Date</span>
+                                                <p>17/08/2019 06:00pm</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user_section">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="todo_right">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <span>Priority</span>
+                                                <p>1</p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <span>Owner</span>
+                                                <p>Owner Name</p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <span>Due Date</span>
+                                                <p>17/08/2019 06:00pm</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user_section">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="todo_right">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <span>Priority</span>
+                                                <p>1</p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <span>Owner</span>
+                                                <p>Owner Name</p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <span>Due Date</span>
+                                                <p>17/08/2019 06:00pm</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -654,6 +691,16 @@
         $('.btn_no').click(function () {
             $('.alert_popup_error').css('display', 'block');
             $('.alert_popup_error').show().delay(2000).fadeOut(400);
+        });
+        $('.form_input .fa-search').click(function(){
+            if($('.search_ldap_user').hasClass('no_display_section')){
+                $('.search_ldap_user').removeClass('no_display_section');
+                $('.search_ldap_user').addClass('yes_display_section');
+            }
+        });
+        $('.close_button').click(function(){
+            $('.search_ldap_user').removeClass('yes_display_section');
+            $('.search_ldap_user').addClass('no_display_section');
         });
         $('.fa-plus').click(function () {
             $('.search_todo').hide();
