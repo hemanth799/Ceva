@@ -44,11 +44,11 @@
                                     <div class="row">
                                         <div class="col-md-2"></div>
                                         <div id="toggle-int" class="col-md-3">
-                                            <h5 style="margin-top: 5px;"><span class="Int">Internal</span></h5>
+                                            <h5 style="margin-top: 5px;"><span class="Int">Serving:</span></h5>
                                         </div>
                                         <div class="col-md-3">
                                             <label class="switch">
-                                                <input type="checkbox" checked onclick="toggleFunction()">
+                                                <input type="checkbox" class="chk" onclick="toggleFunction()">
                                                 <span class="slider round"></span>
                                             </label>
                                         </div>
@@ -64,11 +64,11 @@
                                     <div class="row">
                                         <div class="col-md-2"></div>
                                         <div id="toggle-int" class="col-md-3">
-                                            <h5 style="margin-top: 5px;"><span class="Int">Internal</span></h5>
+                                            <h5 style="margin-top: 5px;"><span class="Int">Serving:</span></h5>
                                         </div>
                                         <div class="col-md-3">
                                             <label class="switch">
-                                                <input type="checkbox" checked onclick="toggleFunction()">
+                                                <input type="checkbox" onclick="toggleFunction()">
                                                 <span class="slider round"></span>
                                             </label>
                                         </div>
@@ -84,11 +84,11 @@
                                     <div class="row">
                                         <div class="col-md-2"></div>
                                         <div id="toggle-int" class="col-md-3">
-                                            <h5 style="margin-top: 5px;"><span class="Int">Internal</span></h5>
+                                            <h5 style="margin-top: 5px;"><span class="Int">Serving:</span></h5>
                                         </div>
                                         <div class="col-md-3">
                                             <label class="switch">
-                                                <input type="checkbox" checked onclick="toggleFunction()">
+                                                <input type="checkbox" onclick="toggleFunction()">
                                                 <span class="slider round"></span>
                                             </label>
                                         </div>
@@ -104,11 +104,11 @@
                                     <div class="row">
                                         <div class="col-md-2"></div>
                                         <div id="toggle-int" class="col-md-3">
-                                            <h5 style="margin-top: 5px;"><span class="Int">Internal</span></h5>
+                                            <h5 style="margin-top: 5px;"><span class="Int">Serving:</span></h5>
                                         </div>
                                         <div class="col-md-3">
                                             <label class="switch">
-                                                <input type="checkbox" checked onclick="toggleFunction()">
+                                                <input type="checkbox" onclick="toggleFunction()">
                                                 <span class="slider round"></span>
                                             </label>
                                         </div>
@@ -150,6 +150,29 @@
                 </div>
             </div>
         </div>
+        <div class="search_ldap_user no_display_section">
+                <div class="ldap_section">
+                    <div class="row">
+                        <div class="col-md-11">
+                            <h4><span class="red">Confirmation </span></h4>
+                            <br>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form_input">
+                                <p><strong>Hostname:</strong> ceva-snapshot.mydevcloud.io </p>
+                                <p>Turning on will add this server to load balancer pool. Are you sure you want to turn on?</p>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <input type="button" value="YES" class="btn_yes">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="button" value="NO" class="btn_no">
+                        </div>
+                    </div>
+                </div>
+            </div>
         <!-- <div class="alert_popup_error" style="display: none;">
             <div>
                 <img src="images/cancel.png" />
@@ -181,6 +204,15 @@
                 $(this).attr('src', 'images/user_settings.png');
             });
             $('[data-toggle="tooltip"]').tooltip();
+            $('.chk').click(function(){
+                if($('.chk').prop('checked')){
+                    if($('.search_ldap_user').hasClass('no_display_section')){
+                        $('.search_ldap_user').removeClass('no_display_section');
+                        $('.search_ldap_user').addClass('yes_display_section');
+                    }
+                }
+            });
+            
             // $('.btn_yes').click(function () {
             //     $('.alert_popup_success').css('display', 'block');
             //     $('.alert_popup_success').show().delay(2000).fadeOut(400);

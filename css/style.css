@@ -327,6 +327,8 @@ option { font-weight: bold; }
 .user_admin table tr td .row div { height: 30px; }
 .user_admin table tr td { width: 50%; border: 1px solid #999; text-align: center; }
 .user_admin table tr td .btn_yes { width: 60%; }
+.user_admin table tr td .slider { background-color: #999; }
+.user_admin table tr td input:checked+.slider { background-color: #990033; }
 
 /* -------------------MEDIA Queries---------------------- */
 
