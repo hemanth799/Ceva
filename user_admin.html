@@ -56,7 +56,7 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <input type="submit" value="SUBMIT" class="btn_yes">
+                                    <input type="submit" value="Create Heap Dump" class="new_btn btn_yes">
                                 </td>
                             </tr>
                             <tr>
@@ -76,7 +76,7 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <input type="submit" value="SUBMIT" class="btn_yes">
+                                    <input type="submit" value="Create Heap Dump" class="new_btn btn_yes">
                                 </td>
                             </tr>
                             <tr>
@@ -96,7 +96,7 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <input type="submit" value="SUBMIT" class="btn_yes">
+                                    <input type="submit" value="Create Heap Dump" class="new_btn btn_yes">
                                 </td>
                             </tr>
                             <tr>
@@ -116,7 +116,7 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <input type="submit" value="SUBMIT" class="btn_yes">
+                                    <input type="submit" value="Create Heap Dump" class="new_btn btn_yes">
                                 </td>
                             </tr>
                         </table>
@@ -124,7 +124,7 @@
                 </div>
             </div>
         </div>
-        <div class="search_ldap_user no_display_section">
+        <div class="create_heap_dump no_display_section">
             <div class="ldap_section">
                 <div class="row">
                     <div class="col-md-11">
@@ -150,7 +150,7 @@
                 </div>
             </div>
         </div>
-        <div class="search_ldap_user no_display_section">
+        <div class="serving no_display_section">
                 <div class="ldap_section">
                     <div class="row">
                         <div class="col-md-11">
@@ -206,21 +206,26 @@
             $('[data-toggle="tooltip"]').tooltip();
             $('.chk').click(function(){
                 if($('.chk').prop('checked')){
-                    if($('.search_ldap_user').hasClass('no_display_section')){
-                        $('.search_ldap_user').removeClass('no_display_section');
-                        $('.search_ldap_user').addClass('yes_display_section');
+                    if($('.serving').hasClass('no_display_section')){
+                        $('.serving').removeClass('no_display_section');
+                        $('.serving').addClass('yes_display_section');
                     }
                 }
             });
-            
-            // $('.btn_yes').click(function () {
-            //     $('.alert_popup_success').css('display', 'block');
-            //     $('.alert_popup_success').show().delay(2000).fadeOut(400);
-            // });
-            // $('.btn_no').click(function () {
-            //     $('.alert_popup_error').css('display', 'block');
-            //     $('.alert_popup_error').show().delay(2000).fadeOut(400);
-            // });
+            $('.new_btn').click(function(){
+                if($('.create_heap_dump').hasClass('no_display_section')){
+                        $('.create_heap_dump').removeClass('no_display_section');
+                        $('.create_heap_dump').addClass('yes_display_section');
+                    }
+            });
+            $('.create_heap_dump .btn_yes').click(function () {
+                $('.create_heap_dump').removeClass('yes_display_section');
+                $('.create_heap_dump').addClass('no_display_section');
+            });
+            $('.serving .btn_yes').click(function () {
+                $('.serving').removeClass('yes_display_section');
+                $('.serving').addClass('no_display_section');
+            });
             $('.fa-user-plus').click(function () {
                 $('.search_user').hide();
                 $('.add_user').show();
@@ -256,15 +261,9 @@
                 $('.edit_user').hide();
                 $('.user_profile').hide();
             });
-            $('.btn_yes').click(function(){
-                if($('.search_ldap_user').hasClass('no_display_section')){
-                    $('.search_ldap_user').removeClass('no_display_section');
-                    $('.search_ldap_user').addClass('yes_display_section');
-                }
-            });
             $('.close_button').click(function(){
-                $('.search_ldap_user').removeClass('yes_display_section');
-                $('.search_ldap_user').addClass('no_display_section');
+                $('.create_heap_dump').removeClass('yes_display_section');
+                $('.create_heap_dump').addClass('no_display_section');
             });
 
             // --------------- Assign Roles

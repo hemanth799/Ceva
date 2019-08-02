@@ -329,6 +329,15 @@ option { font-weight: bold; }
 .user_admin table tr td .btn_yes { width: 60%; }
 .user_admin table tr td .slider { background-color: #999; }
 .user_admin table tr td input:checked+.slider { background-color: #990033; }
+.create_heap_dump, .serving {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 9; 
+}
 
 /* -------------------MEDIA Queries---------------------- */
 
