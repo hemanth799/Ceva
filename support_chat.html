@@ -15,12 +15,64 @@
 </head>
 
 <body>
-    <div class="main_wrapper" style="padding-top: 0px;">
-        <div class="container-fluid" style="padding: 0px;">
+    <div class="main_wrapper">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
                     <div class="heading">
                         <img src="images/chat_bg.jpg" style="width: 100%;"/>
+                    </div>
+                    <div class="support_chat">
+                        <div class="chat_head">
+                            <div class="row" style="padding: 5px;">
+                                <div class="col-md-8">
+                                    CEVA - Live Chat
+                                </div>
+                                <div class="col-md-4 action_icons text-right">
+                                    <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat_body no_display_section">
+                            <div class="chat_section">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p class="agent_join text-center">Agent Bob Joined</p>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <h6>Agent Bob</h6>
+                                        <div class="agent_text">
+                                            <p>Hi User name. How can i help you?</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-10">
+                                        <h6 class="text-right">User Name</h6>
+                                        <div class="user_text">
+                                            <p>Nothing seems to be working right for me</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <div class="agent_text">
+                                            <p>It working for me. Have you tried turning it off and on again?</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2"></div>
+                                </div>
+                            </div>
+                            <div class="post_section">
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <textarea rows="2" style="resize: none; width: 100%; height: 100%; font-size: 12px;"></textarea>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <button class="btn_no"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -34,7 +86,18 @@
     <script src="js/jquery.overlayScrollbars.js"></script>
     <script>
         $(document).ready(function () {
-            
+            $('.fa-chevron-up').click(function(){
+                $('.chat_body').toggleClass('no_display_section');
+                $(this).removeClass('fa-chevron-up');
+                $(this).addClass('fa-chevron-down');
+            });
+            $('.fa-chevron-down').click(function(){
+                $(this).removeClass('fa-chevron-down');
+                $(this).addClass('fa-chevron-up');
+            });
+            $('.fa-times').click(function(){
+                $(this).parents('.support_chat').css('display','none');
+            });
         });
     </script>
 </body>
