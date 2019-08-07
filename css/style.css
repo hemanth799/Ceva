@@ -419,8 +419,20 @@ option { font-weight: bold; }
 .panel a:hover { text-decoration: none; }
 .panel-heading{ background-color: #fff; padding: 10px; border: 1px solid #999; }
 .panel-collapse { border: 1px solid rgb(153, 153, 153); padding: 10px; }
-.panel-heading .accordion-toggle:before { content: "\e114"; }
-.panel-heading .accordion-toggle.collapsed:before { content: "\e080"; }
+.panel-heading .accordion-toggle:before { 
+    content: "\25BE";
+    font-size: 40px;
+    line-height: 0;
+    position: relative;
+    top: 3px;
+}
+.panel-heading .accordion-toggle.collapsed:before { 
+    content: "\25B8";
+    font-size: 40px;
+    line-height: 0;
+    position: relative;
+    top: 3px;
+}
 .sec_head { border-bottom: 1px solid #999; margin-bottom: 5px; }
 .sec_head h6 { font-size: 16px; color: #990033; font-weight: bold; }
 .sec_body { border: 1px solid #999; margin: 10px 0px;}
