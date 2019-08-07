@@ -16,11 +16,15 @@ span.red{ color: #911515; font-weight: 500; }
     background-color: #fff;
     right: -30px;
 }
-.tools ul { margin: 0px; padding: 0px; }
-.tools ul li { list-style: none; float: left; margin: 0px 2px; }
+.actions ul, .tools ul { margin: 0px; padding: 0px; }
+.actions ul li, .tools ul li { list-style: none; float: left; margin: 0px 2px; }
+.actions ul li { list-style: none; float: left; margin: 0px 5px; }
 .tools .fa-search,
 .tools .fa-trash, 
 .tools .fa-pencil, 
+.actions .fa-eye, 
+.actions .fa-download, 
+.actions .fa-files-o,
 .tools .fa-refresh, 
 .tools .user_settings, 
 .tools .fa-user-circle-o, 
@@ -35,11 +39,11 @@ span.red{ color: #911515; font-weight: 500; }
     font-size: 17px;
 }
 .tools .fa-users { padding: 5px;  }
-.tools .fa-refresh, .tools .fa-users { color: #666; border: 2px solid #666; }
+.tools .fa-refresh, .tools .fa-users, .actions .fa-files-o { color: #666; border: 2px solid #666; }
 .tools .fa-refresh:hover,  .tools .fa-users:hover { background-color: #999;  color: #fff; border: 2px solid #999; }
 .tools .fa-user-circle-o { font-size: 30px !important; color: #666; padding: initial; border: none; }
 .tools .fa-user-circle-o:hover { background-color: #fff;  color: #999; }
-.tools .fa-pencil { color: #000; border: 2px solid #000; }
+.tools .fa-pencil, .actions .fa-eye { color: #000; border: 2px solid #000; }
 .tools .fa-pencil:hover, .tools .fa-user-plus:hover, .tools .fa-plus:hover { background-color: #000; color: #fff; }
 .tools .fa-user-plus, .tools .fa-plus { border: 2px solid #000; color: #000; padding: 5px 7px;}
 .tools .fa-search:hover, .tools .fa-trash:hover, .fa-user-times:hover { color: #fff; background-color: #990033; }
@@ -417,6 +421,12 @@ option { font-weight: bold; }
 .panel-collapse { border: 1px solid rgb(153, 153, 153); padding: 10px; }
 .panel-heading .accordion-toggle:before { content: "\e114"; }
 .panel-heading .accordion-toggle.collapsed:before { content: "\e080"; }
+.sec_head { border-bottom: 1px solid #999; margin-bottom: 5px; }
+.sec_head h6 { font-size: 16px; color: #990033; font-weight: bold; }
+.sec_body { border: 1px solid #999; margin: 10px 0px;}
+.sec_body h6 { font-size: 12px; font-weight: bold; margin: 20px 0px; }
+.actions { margin: 5% 22%; }
+.actions .tooltiptext { left: -19px !important; top: 30px; }
 
 /* -------------------MEDIA Queries---------------------- */
 
