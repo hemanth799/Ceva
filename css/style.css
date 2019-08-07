@@ -362,6 +362,7 @@ option { font-weight: bold; }
     height: 300px;
 }
 .chat_section h6 { color: #990033; font-size: 10px; font-weight: bold;}
+.chat_section p { margin-bottom: 0px; }
 .chat_section .agent_text p { 
     font-size: 12px; 
     background-color: #707070; 
@@ -386,7 +387,7 @@ option { font-weight: bold; }
     height: 0;
     left: -13px;
     right: auto;
-    top: 8px;
+    top: 1px;
     bottom: auto;
     border: 7px solid;
     border-color: #d7d7d7 #d7d7d7 transparent transparent;
@@ -398,12 +399,24 @@ option { font-weight: bold; }
     height: 0;
     left: auto;
     right: 1px;
-    top: 18px;
+    top: 0px;
     bottom: auto;
     border: 7px solid;
     border-color: #d7d7d7 transparent transparent  #d7d7d7;
 }
+.agent_time, .user_time { margin-bottom: 10px; font-size: 10px; }
+.user_time { text-align: right; }
+.spl_one::before { top: 14px; }
 
+/* -------------------File Navigator--------------------- */
+
+.panel { margin-bottom: 15px; }
+.panel a { color: #990033; }
+.panel a:hover { text-decoration: none; }
+.panel-heading{ background-color: #fff; padding: 10px; border: 1px solid #999; }
+.panel-collapse { border: 1px solid rgb(153, 153, 153); padding: 10px; }
+.panel-heading .accordion-toggle:before { content: "\e114"; }
+.panel-heading .accordion-toggle.collapsed:before { content: "\e080"; }
 
 /* -------------------MEDIA Queries---------------------- */
 
