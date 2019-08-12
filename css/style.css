@@ -418,7 +418,7 @@ option { font-weight: bold; }
 .panel a { color: #990033; }
 .panel a:hover { text-decoration: none; }
 .panel-heading{ background-color: #fff; padding: 10px; border: 1px solid #999; }
-.panel-collapse { border: 1px solid rgb(153, 153, 153); padding: 10px; }
+.panel-collapse { border: 1px solid rgb(153, 153, 153); padding: 10px; border-bottom: 2px solid #990033;}
 .panel-heading .accordion-toggle:before { 
     content: "\25BE";
     font-size: 40px;

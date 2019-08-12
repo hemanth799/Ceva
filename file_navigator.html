@@ -12,6 +12,32 @@
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="css/OverlayScrollbars.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <style type="text/css">
+        .bs-example{
+            margin: 20px;
+        }
+        .rotate{
+            -webkit-transform: rotate(90deg);  /* Chrome, Safari, Opera */
+                -moz-transform: rotate(90deg);  /* Firefox */
+                -ms-transform: rotate(90deg);  /* IE 9 */
+                    transform: rotate(90deg);  /* Standard syntax */    
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            // Add minus icon for collapse element which is open by default
+            $(".collapse.in").each(function(){
+                $(this).siblings(".panel-heading").find(".glyphicon").addClass("rotate");
+            });
+            
+            // Toggle plus minus icon on show hide of collapse element
+            $(".collapse").on('show.bs.collapse', function(){
+                $(this).parent().find(".glyphicon").addClass("rotate");
+            }).on('hide.bs.collapse', function(){
+                $(this).parent().find(".glyphicon").removeClass("rotate");
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -32,7 +58,7 @@
                                         <h4 class="panel-title">
                                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"
                                                 href="#collapseOne">
-                                                Logs
+                                                <span class="glyphicon glyphicon-menu-right"></span>Logs
                                             </a>
                                         </h4>
                                     </div>
