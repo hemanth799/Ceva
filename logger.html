@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Logger Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="css/OverlayScrollbars.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .total_sections {
+            padding-right:35px; 
+            height: 500px; 
+            overflow-y: scroll; 
+            overflow-x: hidden;
+        }
+        .total_sections .row{
+            margin-bottom: 20px;
+        }
+        .total_sections p{
+            border: 1px solid #999; padding: 5px;
+        }
+        .result_count{
+            position: absolute;
+            right: 40px;
+            top: 30px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="main_wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="heading">
+                            <h2><span class="red">Changes </span>Class Log Level</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="search_add" style="padding-right: 10px;">
+                            <div class="sub_head">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <h4><span class="red">Class </span>Name</h4>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form_input">
+                                            <input type="text" value="name" name="Login" class="input-fields form-control" style="width: 90%; display: inline-block;">
+                                            <i class="fa fa-sort" aria-hidden="true" style="display: inline-block;"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="result_count">
+                                            <p>Showing 7 of 50</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="total_sections" style="padding-right:35px; height: 500px; overflow-y: scroll; overflow-x: hidden;">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-12 col-sm-12">
+                                            <p>com.ceva.cjf.base.rest.v1.impl.BuildInfoImpl</p>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <select class="input-fields" style="padding: 7px;">
+                                                <option>Select Level</option>
+                                                <option>SEVERE</option>
+                                                <option>WARNING</option>
+                                                <option>INFO</option>
+                                                <option>CONFIG</option>
+                                                <option>FINE</option>
+                                                <option>FINER</option>
+                                                <option>FINEST</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <input type="button" value="SUBMIT" class="btn_yes">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-12 col-sm-12">
+                                            <p>com.ceva.cjf.base.web.BuildInfoBean</p>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <select class="input-fields" style="padding: 7px;">
+                                                <option>Select Level</option>
+                                                <option>SEVERE</option>
+                                                <option>WARNING</option>
+                                                <option>INFO</option>
+                                                <option>CONFIG</option>
+                                                <option>FINE</option>
+                                                <option>FINER</option>
+                                                <option>FINEST</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <input type="button" value="SUBMIT" class="btn_yes">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-12 col-sm-12">
+                                            <p>com.ceva.cjf.base.web.EnvironmentInfoBean</p>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <select class="input-fields" style="padding: 7px;">
+                                                <option>Select Level</option>
+                                                <option>SEVERE</option>
+                                                <option>WARNING</option>
+                                                <option>INFO</option>
+                                                <option>CONFIG</option>
+                                                <option>FINE</option>
+                                                <option>FINER</option>
+                                                <option>FINEST</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <input type="button" value="SUBMIT" class="btn_yes">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-12 col-sm-12">
+                                            <p>com.ceva.cjf.base.web.EnvironmentInfoBean</p>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <select class="input-fields" style="padding: 7px;">
+                                                <option>Select Level</option>
+                                                <option>SEVERE</option>
+                                                <option>WARNING</option>
+                                                <option>INFO</option>
+                                                <option>CONFIG</option>
+                                                <option>FINE</option>
+                                                <option>FINER</option>
+                                                <option>FINEST</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <input type="button" value="SUBMIT" class="btn_yes">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-12 col-sm-12">
+                                            <p>com.ceva.cjf.base.web.jsf.CJFBaseBean</p>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <select class="input-fields" style="padding: 7px;">
+                                                <option>Select Level</option>
+                                                <option>SEVERE</option>
+                                                <option>WARNING</option>
+                                                <option>INFO</option>
+                                                <option>CONFIG</option>
+                                                <option>FINE</option>
+                                                <option>FINER</option>
+                                                <option>FINEST</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <input type="button" value="SUBMIT" class="btn_yes">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-12 col-sm-12">
+                                            <p>com.ceva.cjf.base.web.jsf.LogExceptionHandlerWrapper</p>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <select class="input-fields" style="padding: 7px;">
+                                                <option>Select Level</option>
+                                                <option>SEVERE</option>
+                                                <option>WARNING</option>
+                                                <option>INFO</option>
+                                                <option>CONFIG</option>
+                                                <option>FINE</option>
+                                                <option>FINER</option>
+                                                <option>FINEST</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <input type="button" value="SUBMIT" class="btn_yes">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-12 col-sm-12">
+                                            <p>com.ceva.cjf.base.web.jsf.LoggingPhaseListener</p>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <select class="input-fields" style="padding: 7px;">
+                                                <option>Select Level</option>
+                                                <option>SEVERE</option>
+                                                <option>WARNING</option>
+                                                <option>INFO</option>
+                                                <option>CONFIG</option>
+                                                <option>FINE</option>
+                                                <option>FINER</option>
+                                                <option>FINEST</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <input type="button" value="SUBMIT" class="btn_yes">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-12 col-sm-12">
+                                            <p>com.ceva.cjf.base.web.jsf.ViewExpiryExceptionHandlerWrapper</p>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <select class="input-fields" style="padding: 7px;">
+                                                <option>Select Level</option>
+                                                <option>SEVERE</option>
+                                                <option>WARNING</option>
+                                                <option>INFO</option>
+                                                <option>CONFIG</option>
+                                                <option>FINE</option>
+                                                <option>FINER</option>
+                                                <option>FINEST</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <input type="button" value="SUBMIT" class="btn_yes">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-12 col-sm-12">
+                                            <p>com.ceva.cjf.base.web.MetricsBean</p>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <select class="input-fields" style="padding: 7px;">
+                                                <option>Select Level</option>
+                                                <option>SEVERE</option>
+                                                <option>WARNING</option>
+                                                <option>INFO</option>
+                                                <option>CONFIG</option>
+                                                <option>FINE</option>
+                                                <option>FINER</option>
+                                                <option>FINEST</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <input type="button" value="SUBMIT" class="btn_yes">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-12 col-sm-12">
+                                            <p>com.ceva.cjf.base.web.presentation.AdminController</p>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <select class="input-fields" style="padding: 7px;">
+                                                <option>Select Level</option>
+                                                <option>SEVERE</option>
+                                                <option>WARNING</option>
+                                                <option>INFO</option>
+                                                <option>CONFIG</option>
+                                                <option>FINE</option>
+                                                <option>FINER</option>
+                                                <option>FINEST</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <input type="button" value="SUBMIT" class="btn_yes">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-12 col-sm-12">
+                                            <p>com.ceva.cjf.base.web.service.AnnouncementServiceImpl</p>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <select class="input-fields" style="padding: 7px;">
+                                                <option>Select Level</option>
+                                                <option>SEVERE</option>
+                                                <option>WARNING</option>
+                                                <option>INFO</option>
+                                                <option>CONFIG</option>
+                                                <option>FINE</option>
+                                                <option>FINER</option>
+                                                <option>FINEST</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <input type="button" value="SUBMIT" class="btn_yes">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-12 col-sm-12">
+                                            <p>com.ceva.framework.ejb.profile.service.UserProfileServiceImpl</p>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <select class="input-fields" style="padding: 7px;">
+                                                <option>Select Level</option>
+                                                <option>SEVERE</option>
+                                                <option>WARNING</option>
+                                                <option>INFO</option>
+                                                <option>CONFIG</option>
+                                                <option>FINE</option>
+                                                <option>FINER</option>
+                                                <option>FINEST</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <input type="button" value="SUBMIT" class="btn_yes">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/fcee4edbc0.js"></script>
+<script src="js/jquery.overlayScrollbars.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.total_sections').overlayScrollbars({
+            className: "os-theme-round-dark"
+        });
+    });
+</script>
+</html>
