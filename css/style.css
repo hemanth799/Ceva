@@ -436,8 +436,9 @@ option { font-weight: bold; }
 .sec_head { border-bottom: 1px solid #999; margin-bottom: 5px; }
 .sec_head h6 { font-size: 16px; color: #990033; font-weight: bold; }
 .sec_body { border: 1px solid #999; margin: 10px 0px;}
-.sec_body h6 { font-size: 12px; font-weight: bold; margin: 20px 0px; }
-.actions { margin: 5% 22%; }
+.sec_body label { margin: 10px 0px 0px; font-size: 12px; color: #990033; font-weight: bold; }
+/* .sec_body h6 { font-size: 12px; font-weight: bold; margin: 20px 0px; } */
+.actions { display: inline-block; margin: 10px 0px; }
 .actions .tooltiptext { left: -19px !important; top: 30px; }
 
 /* -------------------Logger Page------------------------ */
