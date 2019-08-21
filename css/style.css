@@ -45,7 +45,8 @@ span.red{ color: #911515; font-weight: 500; }
 .tools .fa-user-circle-o:hover { background-color: #fff;  color: #999; }
 .tools .fa-pencil, .actions .fa-eye { color: #000; border: 2px solid #000; }
 .tools .fa-pencil:hover, .tools .fa-user-plus:hover, .tools .fa-plus:hover { background-color: #000; color: #fff; }
-.tools .fa-user-plus, .tools .fa-plus { border: 2px solid #000; color: #000; padding: 5px 7px;}
+.tools .fa-user-plus { border: 2px solid #000; color: #000; padding: 5px 4px;}
+.tools .fa-plus { border: 2px solid #000; color: #000; padding: 5px 7px;}
 .tools .fa-search:hover, .tools .fa-trash:hover, .fa-user-times:hover { color: #fff; background-color: #990033; }
 .fa-user-times { font-size: 12px !important; padding: 7px}
 .tooltips { position: relative; display: inline-block; }
